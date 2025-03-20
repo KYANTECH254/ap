@@ -1,0 +1,1578 @@
+:root {
+    /* Spaces */
+    --spacing-8x: 64px;
+    --spacing-7x: 56px;
+    --spacing-6x: 48px;
+    --spacing-5x: 40px;
+    --spacing-4x: 32px;
+    --spacing-3x: 24px;
+    --spacing-2x: 16px;
+    --spacing-1x: 8px;
+    --spacing-half: 4px;
+    /* Typography */
+    font-family: "Bankwest-Roboto", "Open Sans", Arial, sans-serif;
+    /* Color Palette */
+    --color-brand-orange: #FF911E;
+    --color-brand-green: #5AE18C;
+    --color-brand-blue: #64A0FF;
+    --color-brand-pink: #FF87D7;
+    --color-digital-orange: #DB7000;
+    --color-digital-green: #177D3D;
+    --color-digital-blue: #0063FF;
+    --color-digital-red: #C73500;
+    --color-digital-red-light: #FF6933;
+    --color-greys-black: #000000;
+    --color-greys-charcoal: #282828;
+    --color-greys-charcoal-90: #3D3D3D;
+    --color-greys-charcoal-80: #535353;
+    --color-greys-charcoal-20: #D4D4D4;
+    --color-greys-charcoal-10: #E9E9E9;
+    --color-greys-charcoal-05: #F4F4F4;
+    --color-greys-white: #FFFFFF;
+    /* Element Colors */
+    --color-border-bw: var(--color-digital-orange);
+    --color-bg-bw: #FFFDFA;
+    --color-border-info: var(--color-digital-blue);
+    --color-bg-info: #FAFDFB;
+    --color-border-success: var(--color-digital-green);
+    --color-bg-success: #FAFCFB;
+    --color-border-warn: var(--color-digital-red);
+    --color-bg-warn: #FEFBFA;
+    --color-text-primary: var(--color-greys-charcoal);
+    --color-text-link: var(--color-digital-blue);
+    /* Assets */
+    --icon-bw: url("https://identity.ibs.bankwest.com.au/content/shared/images/icon-bw-28.svg");
+    --icon-info: url("https://identity.ibs.bankwest.com.au/content/shared/images/icon-info-28.svg");
+    --icon-spanner: url("https://identity.ibs.bankwest.com.au/content/shared/images/icon-spanner-28.svg");
+    --icon-success: url("https://identity.ibs.bankwest.com.au/content/shared/images/icon-success-28.svg");
+    --icon-warn: url("https://identity.ibs.bankwest.com.au/content/shared/images/icon-warn-28.svg");
+}
+
+/* Spaces */
+
+.margin-bottom-4x {
+    margin-bottom: var(--spacing-4x);
+}
+
+.margin-bottom-3x {
+    margin-bottom: var(--spacing-3x);
+}
+
+.margin-bottom-2x {
+    margin-bottom: var(--spacing-2x);
+}
+
+.margin-top-3x {
+    margin-top: var(--spacing-3x);
+}
+
+/* Buttons */
+
+.button-primary-orange {
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border: 2px solid #DB7000;
+    border-radius: 24px;
+    background-color: #ff911e;
+    color: #282828;
+}
+
+.button-primary-orange:before {
+    border-color: #282828;
+}
+
+.button-primary-orange:hover,
+.button-primary-orange:focus {
+    background-color: #ff911e;
+    border-color: #db7000;
+    color: #282828;
+}
+
+.button-primary-orange:active {
+    background-color: #ff911e;
+    border-color: #db7000;
+    color: #282828;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button-primary-charcoal {}
+
+.button-primary-charcoal:hover,
+.button-primary-charcoal:focus {}
+
+.button-primary-charcoal:active {}
+
+.button-primary-white {}
+
+.button-primary-white:hover,
+.button-primary-white:focus {}
+
+.button-primary-white:active {}
+
+.button-secondary-charcoal {}
+
+.button-secondary-charcoal:hover,
+.button-secondary-charcoal:focus {}
+
+.button-secondary-charcoal:active {}
+
+.button-secondary-white {}
+
+.button-secondary-white:hover .button-secondary-white:focus {}
+
+.button-secondary-white:active {}
+
+.button-tertiary-link {
+    border-style: none;
+    background-color: transparent;
+    color: #0063FF;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button-tertiary-link::before {
+    background-color: transparent;
+    color: #0063FF;
+}
+
+.button-tertiary-link:hover {
+    color: #0063FF;
+    background-color: transparent;
+    text-decoration: underline;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button-tertiary-link:focus {
+    color: #0063FF;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button-tertiary-link:focus>span {
+    outline: 1px solid #0063FF;
+    outline-offset: 3px;
+}
+
+.button-tertiary-link:active {
+    background-color: transparent;
+    color: #0063FF;
+}
+
+.link-text {}
+
+/* Groups */
+
+.field-form-group {
+    position: relative;
+}
+
+.button-form-group {
+    margin-bottom: 16px;
+}
+
+.button-form-group-vertical button {
+    margin-bottom: var(--spacing-2x);
+    width: 100%;
+    height: 100%;
+}
+
+.button-form-group-vertical button:last-child {
+    margin-bottom: 0;
+}
+
+/* unrefactored styles */
+
+.button-link {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    color: #069 !important;
+    text-decoration: underline;
+    cursor: pointer !important;
+    font-size: 14px;
+}
+
+button-disabled {
+    cursor: not-allowed;
+}
+
+button.button-disabled:before {
+    outline: none;
+    cursor: not-allowed;
+}
+
+button.button-disabled:not(:disabled) {
+    outline: none;
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+button.button-disabled:hover {
+    background-color: #282828;
+}
+
+input[type="button"]:not(:disabled) {
+    outline: none;
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+.ibsRefresh {
+    display: none;
+}
+
+.retail-page .flex-column-container,
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25% auto;
+}
+
+.logo-banner {
+    position: fixed;
+    z-index: 1;
+    max-height: 60px;
+    max-height: 64px;
+}
+
+@media screen and (min-width: 767px) {
+    .logo-banner {
+        position: fixed;
+    }
+}
+
+.error-spacing-top {
+    margin-top: 8px;
+}
+
+.error-spacing-bottom {
+    margin-bottom: 16px;
+}
+
+.middle-wrap-section {
+    max-width: 477px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+    position: relative;
+}
+
+.middle-section {
+    max-width: 477px;
+    margin: 0 auto;
+    flex-grow: 1;
+    padding: 24px;
+    background: white;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    padding-bottom: 0px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.card-header.collapsed {
+    background: #ffffff;
+}
+
+.card-header:not(.collapsed) {
+    background: #ffffff;
+}
+
+.card {
+    border-top: 2px solid rgba(0, 0, 0, .125);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+h1 {
+    font-family: "Bankwest-Roboto", "Open Sans", Arial, sans-serif;
+    color: #282828;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0px !important;
+}
+
+h2 {
+    font-family: "Bankwest-Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    color: #282828;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+
+h2.mb-0 {
+    margin: 0 auto;
+    height: 53px;
+}
+
+h1.login-heading {
+    margin-bottom: 16px;
+}
+
+.login-help {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+
+input[type=checkbox]:checked:before {
+    background-color: green;
+}
+
+i.fa.fa-chevron-down {
+    float: right;
+}
+
+i.fa.fa-chevron-up {
+    float: right;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.bw-logo {
+    width: 154px;
+    height: 40px;
+    margin-top: 12px !important;
+}
+
+.remember-pan {
+    color: #282828;
+    font-size: 14px;
+}
+
+.remember-login {
+    width: 100%;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.customer-link {
+    display: inline-block;
+    color: #0063FF;
+    font-family: 'Bankwest-Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: right;
+    float: right;
+}
+
+.customer-link a {
+    text-decoration: none;
+}
+
+.pan-link {
+    margin-top: 4px;
+    margin-bottom: 18px;
+    margin-left: 24px;
+}
+
+.password-link {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#fcs {
+    visibility: hidden;
+}
+
+#business {
+    visibility: hidden;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.card-rule {
+    margin-right: -24px;
+    margin-bottom: 1.6rem;
+    margin-left: -24px;
+    border: 0;
+    border-top: 1px solid #e9e9e9;
+}
+
+.target-media-label {
+    font-size: 14px;
+    color: var(--color-text-primary);
+}
+
+/* Input */
+
+input[type=checkbox] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    content: none;
+}
+
+.checkbox-pan {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-image: url("https://identity.ibs.bankwest.com.au/content/shared/images/checkbox.svg");
+    background-size: contain;
+    outline: none;
+}
+
+.checkbox-pan:checked:after {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    outline: none;
+    content: url("https://identity.ibs.bankwest.com.au/content/shared/images/checkbox-selected.svg");
+}
+
+.text-input {
+    box-sizing: border-box;
+    height: 56px;
+    max-width: 428px;
+    padding-left: 18px;
+    border: 1px solid #535353;
+    -ms-border-radius: 8px !important;
+    border-radius: 8px !important;
+    background-color: #FFFFFF;
+}
+
+.text-input:focus {
+    border: 2px solid #282828 !important;
+    box-shadow: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+/* Label */
+
+.animated-label {
+    top: -0.45rem;
+    left: 13px;
+    color: #282828;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    background: #ffffff;
+    padding: 0 5px;
+    transition: none;
+}
+
+label.label-pan {
+    vertical-align: top;
+    line-height: 20px;
+    display: inline-flex;
+    height: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+input:focus~label,
+input.used~label,
+input[required]:valid~label {
+    top: -0.45rem;
+    left: 13px;
+    transform: none;
+    color: initial;
+}
+
+input:-webkit-autofill~label {
+    top: -0.45rem;
+    left: 13px;
+    transform: none;
+    color: initial;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: initial;
+}
+
+input:focus~.highlight {
+    animation: none;
+}
+
+/* active */
+
+input~label {
+    color: #282828;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+input~.form-text-error {
+    visibility: hidden;
+    display: none;
+}
+
+input.show-errors:invalid {
+    border: 2px solid #C73500 !important;
+}
+
+input.show-errors:invalid~label {
+    color: #C73500;
+}
+
+input.show-errors:invalid~.form-text-error {
+    visibility: visible;
+}
+
+input.show-errors:invalid~.form-text-display-valid {
+    display: none;
+}
+
+input.show-errors:invalid~.form-text-display-invalid {
+    display: block;
+}
+
+input.show-customer-submit-errors {
+    border: 2px solid #C73500 !important;
+}
+
+input.show-customer-submit-errors~label {
+    color: #C73500 !important;
+}
+
+input.show-customer-submit-errors~.form-text-error {
+    visibility: visible;
+}
+
+input~.form-text-error.form-text-display-invalid {
+    display: none;
+}
+
+input.show-errors-persist {
+    border: 2px solid #C73500;
+}
+
+input.show-errors-persist:focus {
+    border-color: #c73500 !important;
+}
+
+input.show-errors-persist~label {
+    color: #C73500 !important;
+}
+
+input.show-errors-persist~.form-text-error-persist {
+    visibility: visible;
+    color: #C73500;
+}
+
+/* Clear input text */
+
+.clearable input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.clear-input {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 10px;
+    font-style: normal;
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+    color: #0063FF;
+}
+
+.clearable input::-ms-clear {
+    /* Remove IE default X */
+    display: none;
+}
+
+small.form-text {
+    color: #535353;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+small.form-text-error {
+    color: #c73500;
+    width: auto;
+}
+
+.error-card {
+    border: 1px solid #C73500;
+    border-radius: 24px;
+    color: #282828;
+    background: #ffffff;
+    font-size: 14px;
+    margin-top: 0;
+    max-width: 429px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #FEFBFA;
+}
+
+.success-card {
+    border: 1px solid #177D3D;
+    border-radius: 24px;
+    color: #282828;
+    background: #ffffff;
+    font-size: 14px;
+    margin-top: 0;
+    max-width: 429px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    background-color: rgba(23, 125, 61, 0.02);
+}
+
+.danger.validation-summary-errors {
+    margin-top: 8px;
+    margin-left: 5em;
+    max-width: 331px;
+}
+
+.danger.validation-summary-errors ul {
+    margin: 0px;
+}
+
+.danger.validation-summary-errors ul li {
+    margin: 0;
+}
+
+/* Attention icon */
+
+.attention-exclamation-circle {
+    color: #C73500;
+    margin-bottom: 2em;
+    background: url("https://identity.ibs.bankwest.com.au/content/shared/iconAlert32.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.attention-circle {
+    font-family: 'Bankwest-Roboto';
+    color: #282828;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.attention {
+    margin-top: 1em;
+}
+
+#error-message-link {
+    font-weight: bold;
+    color: #df1d0f;
+}
+
+/** Reset Password screen **/
+
+.retail-left-section {
+    max-width: 477px;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding: 24px;
+    background: white;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    padding-bottom: 0px;
+}
+
+.left-section {
+    max-width: 477px;
+    margin: 0 auto;
+    flex: 50;
+    padding: 24px;
+    background: white;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+}
+
+.liteAnchor {
+    margin-top: var(--spacing-2x);
+}
+
+.padlock {
+    float: right;
+}
+
+.padlock-icon {
+    width: 11px;
+    height: 14px;
+    background-image: url("https://identity.ibs.bankwest.com.au/content/shared/images/Icon-lock-16.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline;
+    text-align: center;
+}
+
+span.padlock-text a {
+    color: #686868;
+    font-family: 'Bankwest-Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-left: 24px;
+    text-decoration: none;
+}
+
+.right-section {
+    flex-grow: 1;
+    background: #FAFAFA;
+    max-width: 328px;
+    max-height: 450px;
+    color: #282828;
+    border: 1px solid #D4D4D4;
+    padding: 24px 32px;
+    margin-left: 24px;
+    border-radius: 24px;
+}
+
+.retail-right-section {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    max-width: 328px;
+    color: #282828;
+    margin-left: 24px;
+    align-self: flex-start;
+}
+
+.inner-right-section {
+    background: #FAFAFA;
+    border: 1px solid #D4D4D4;
+    padding: 1.5rem 2rem;
+    border-radius: 24px;
+}
+
+@media screen and (max-width: 766px) {
+    .retail-right-section {
+        max-width: 477px;
+        margin: 24px 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .padlock {
+        float: none;
+        margin-top: 10px
+    }
+}
+
+.open-eye {
+    display: none;
+    position: absolute;
+    right: 47px;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://identity.ibs.bankwest.com.au/content/shared/images/Icon-eye-open-24.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.adjust-open-eye {
+    margin-right: 7px;
+}
+
+.close-eye {
+    position: absolute;
+    right: 47px;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://identity.ibs.bankwest.com.au/content/shared/images/Icon-eye-closed-24.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.close-eye:hover,
+.open-eye:hover {
+    cursor: pointer;
+}
+
+.hide-it {
+    visibility: hidden;
+}
+
+.cancel-click {
+    animation-name: divShrink;
+    animation-duration: 0.4s;
+}
+
+@keyframes divShrink {
+    50% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.error-card-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.reset-attention {
+    flex: none;
+    text-align: left;
+    vertical-align: top;
+    height: 100%;
+    width: 44px;
+}
+
+.reset-attention-exclamation-circle {
+    color: #C73500;
+    background: url("https://identity.ibs.bankwest.com.au/content/shared/iconAlert32.svg") no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.reset-attention-success-circle {
+    color: #177D3D;
+    background: url("https://identity.ibs.bankwest.com.au/content/shared/images/action-ui-check-24.svg") no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+.reset-attention-messages {
+    flex: 1 1 auto;
+}
+
+.reset-attention-messages ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.reset-attention-messages ul li {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.reset-password-summary {
+    flex: 1 1 auto;
+    flex-direction: row;
+    margin-left: 12%;
+    font-size: 14px;
+}
+
+.reset-password-summary p {
+    margin: 0px;
+}
+
+.reset-password-top-margin {
+    margin-top: 128px;
+}
+
+.fit-width {
+    width: 100%;
+}
+
+input.show-errors:valid {
+    border: 2px solid #C73500 !important;
+}
+
+input.show-errors:valid~label {
+    color: #C73500;
+}
+
+input.show-errors:valid~.form-text-error {
+    visibility: visible;
+}
+
+input.show-errors:valid~.form-text-display-valid {
+    display: none;
+}
+
+input.show-errors:valid~.form-text-display-invalid {
+    display: block;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-ms-reveal {
+    float: right;
+    margin-right: 9%;
+}
+
+.password-list {
+    display: table;
+    padding-right: 0px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.list-item {
+    display: table-row;
+}
+
+.list-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    background-image: url('/content/shared/images/action-ui-checkunselected-24.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    padding-bottom: 0.75rem;
+}
+
+.list-icon.passed {
+    background-image: url('/content/shared/images/action-ui-check-24.svg');
+}
+
+.list-text {
+    display: inline-block;
+    padding-left: 0.75rem;
+    vertical-align: middle;
+    line-height: 1.125rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.45rem;
+}
+
+.list-item-info-disclaimer {
+    font-family: 'Bankwest-Roboto';
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.list-item-info-disclaimer span {
+    color: #535353;
+}
+
+.strength-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.strength-text {
+    font-weight: bold;
+}
+
+.conceal {
+    display: block;
+}
+
+.reveal {
+    display: none;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.bus-logo {
+    height: 4em;
+    width: 15.625em;
+}
+
+.reset-brand-container {
+    width: 100%;
+    min-width: 18.75em;
+    display: flex;
+    justify-content: center;
+    margin: 8em 0px 3em;
+}
+
+.login-spinner {
+    max-height: 100%;
+    max-width: 100%;
+    width: 1.0em;
+    height: 1.0em;
+    vertical-align: middle;
+    margin: 0.25em;
+    background: url("https://identity.ibs.bankwest.com.au/content/shared/images/spinner.svg") no-repeat top left;
+    background-size: contain;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.no-spin {
+    display: none;
+}
+
+/*----Help-Section----*/
+
+.login-help-heading {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.login-help-menu {
+    margin: var(--spacing-6x) -1.5em 0;
+    display: block;
+}
+
+.login-help-menu-item {
+    overflow: auto;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: 1.125em;
+    color: #282828;
+    margin: auto;
+    outline: none;
+    position: relative;
+}
+
+.login-help-menu-item:before {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 1.5rem;
+    width: calc(100% - 1.5rem);
+}
+
+.login-help-menu-item:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.login-help-menu-item:focus {
+    outline: 2px solid #282828;
+}
+
+.accordion> :last-of-type .login-help-menu-item {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.div-left {
+    float: left;
+    width: 95%;
+    margin: 1em 0;
+    font-size: medium;
+}
+
+.div-right {
+    float: right;
+    white-space: nowrap;
+    text-align: center;
+    height: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-property: transform;
+    transform: none;
+}
+
+.li-no-bullets {
+    list-style-type: none;
+}
+
+.chev {
+    height: 1em;
+    width: 1em;
+    background-image: url("https://identity.ibs.bankwest.com.au/content/shared/images/Icon-downchevron16.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.login-help-menu-item[aria-expanded="true"] .div-right {
+    transform: rotate(-180deg);
+}
+
+.opt-content {
+    max-height: 0;
+    height: auto;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-property: max-height;
+    padding: 0 1.5rem;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.opt-content:not([aria-hidden="true"]) {
+    max-height: 500px;
+}
+
+.opt-content ul {
+    min-height: 1px;
+    padding: 0.25rem 0.5rem 0 1rem;
+}
+
+.opt-content li {
+    font-size: inherit;
+}
+
+.opt-content a {
+    min-height: 1px;
+    color: #0063ff;
+    outline-color: #0063ff;
+}
+
+.opt-content .login-help-paragraph {
+    font-size: 14px;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 830px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    div.content-box {
+        max-width: 23.4375em;
+        width: 23.4375em;
+        padding: 1em;
+        margin-bottom: 0em;
+        box-shadow: none;
+    }
+    img.bus-logo {
+        height: 2.875em;
+        width: 11.25em;
+    }
+    .reset-brand-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1.5em 0px 1.5em
+    }
+    .card-rule {
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    .error-card {
+        margin-bottom: 1.5em;
+    }
+    .retail-right-section {
+        max-width: 830px;
+        margin: 0px;
+        align-self: center;
+        order: 1;
+    }
+    .retail-left-section {
+        width: 100%;
+        align-self: center;
+        box-shadow: none;
+        padding: 24px 16px;
+        order: 2;
+        margin-top: 24px;
+        padding-bottom: 0px;
+    }
+    .text-input {
+        max-width: 448px;
+    }
+    .login-help-heading {
+        padding: 0 1em;
+    }
+    .login-help-menu {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    .login-help-menu-item {
+        padding: 0 1rem;
+    }
+    .login-help-menu-item:before {
+        left: 1rem;
+        width: calc(100% - 1rem);
+    }
+    .container.body-content {
+        padding: 0 8px;
+    }
+    .middle-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .conceal {
+        display: none;
+    }
+    .reveal {
+        display: block;
+    }
+    .opt-content {
+        padding: 0 1rem;
+    }
+}
+
+/* Strength meter tooltip */
+
+.tooltip.right .tooltip-inner {
+    background-color: rgba(0, 0, 0, .125);
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: rgba(0, 0, 0, .125);
+}
+
+/** Next RSA views styles **/
+
+.remember-login-next-code {
+    width: 100%;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.bw-fob {
+    padding: 0 3em;
+}
+
+@media screen and (max-width: 470px) {
+    .bw-fob {
+        padding: 0;
+    }
+}
+
+/** Target Media toggle **/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DCDCDC;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #DCDCDC;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+}
+
+.on {
+    display: none;
+    left: 40%;
+}
+
+.off {
+    left: 60%;
+}
+
+.on,
+.off {
+    color: #282828;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    font-size: 10px;
+}
+
+input:checked+.slider .on {
+    display: block;
+}
+
+input:checked+.slider .off {
+    display: none;
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Remember PAN tooltip*/
+
+.pan-tooltip {
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.display-inline {
+    display: inline;
+}
+
+/* PSA Card */
+
+.psa-card {
+    position: relative;
+    margin-bottom: 24px;
+    border: 1px solid;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.psa-card .col {
+    padding-left: 3px;
+}
+
+.psa-title {
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+    font-family: 'Bankwest-Roboto';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+.psa-message {
+    color: var(--color-text-primary);
+    font-family: 'Bankwest-Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.psa-link {
+    margin-top: 16px;
+    color: var(--color-text-link);
+    font-family: 'Bankwest-Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.psa-icon {
+    margin-top: 2px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.psa-type-bw {
+    border-color: var(--color-border-bw);
+    background-color: var(--color-bg-bw);
+}
+
+.psa-type-bw .psa-icon {
+    background: var(--icon-bw);
+}
+
+.psa-type-info {
+    border-color: var(--color-border-info);
+    background-color: var(--color-bg-info);
+}
+
+.psa-type-info .psa-icon {
+    background: var(--icon-info);
+}
+
+.psa-type-spanner {
+    border-color: var(--color-border-info);
+    background-color: var(--color-bg-info);
+}
+
+.psa-type-spanner .psa-icon {
+    background: var(--icon-spanner);
+}
+
+.psa-type-success {
+    border-color: var(--color-border-success);
+    background-color: var(--color-bg-success);
+}
+
+.psa-type-success .psa-icon {
+    background: var(--icon-success);
+}
+
+.psa-type-warn {
+    border-color: var(--color-border-warn);
+    background-color: var(--color-bg-warn);
+}
+
+.psa-type-warn .psa-icon {
+    background: var(--icon-warn);
+}
+
+/* Broker */
+
+.phoneContainer {
+    display: flex;
+    border: 1px solid #000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: none;
+}
+
+#CountryCodeDisplayLabel {
+    pointer-events: none;
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    padding-left: 25px;
+    font-size: large;
+}
+
+.country-code {
+    max-width: 130px;
+}
+
+.country-code select {
+    border-style: none;
+    max-width: 100px;
+}
+
+/* all remaining space removing padding and margins */
+
+.phone-number {
+    margin-left: 10px;
+    width: calc(100% - (100px + 10px + 30px));
+}
+
+/* Modal */
+
+.modal-dialog {
+    width: 477px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 24px;
+    padding: 24px 24px 8px;
+    box-shadow: 0px 24px 32px rgba(40, 40, 40, 0.16);
+}
+
+@media screen and (max-width: 766px) {
+    .modal-dialog {
+        width: 359px;
+    }
+    .modal-content {
+        padding: 24px 16px 8px;
+    }
+}
+
+.modal-header {
+    margin: 0px 0px 16px;
+    border: none;
+    padding: 0;
+    font-family: 'Bankwest-Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.modal-body {
+    padding: 0;
+    font-family: 'Bankwest-Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    border: none;
+    padding: 0;
+}

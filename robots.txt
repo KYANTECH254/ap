@@ -1,0 +1,5 @@
+# Block all crawlers
+Header set X-Robots-Tag "noindex, nofollow"
+
+User-agent: *
+Disallow: /

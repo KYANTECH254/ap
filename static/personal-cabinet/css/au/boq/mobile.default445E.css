@@ -1,0 +1,3230 @@
+.dmy {}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 62.5%;
+    width: 100%
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    background-color: #318FD9;
+    background-image: url(images/radial_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background: #318fd9 url(images/Arrows-MB-TextureStrip.png) repeat-x left top !important;
+    background-size: 2% !important
+}
+
+div {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+span {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+object {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 100%
+}
+
+iframe {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    border: 0;
+    margin: 0;
+    padding: 0 0 8px;
+    font-weight: normal;
+    color: #fff;
+    background: none;
+    text-align: center;
+    font-size: 1.429em
+}
+
+h2 {
+    border: 0;
+    margin: 0;
+    padding: 0 0 8px;
+    font-weight: normal;
+    color: #fff;
+    background: none;
+    text-align: center;
+    font-size: 1.429em
+}
+
+h3 {
+    border: 0;
+    margin: 0;
+    padding: 7px 8px 7px;
+    background: #DC7E28;
+    color: #fff;
+    font-size: 1.429em;
+    font-weight: normal;
+    line-height: normal
+}
+
+h4 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em
+}
+
+h5 {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+h6 {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+p {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+blockquote {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+pre {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em
+}
+
+a {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #414141;
+    text-decoration: none
+}
+
+abbr {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+address {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+cite {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+code {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em
+}
+
+del {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+dfn {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+em {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle
+}
+
+ins {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+q {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+small {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+strong {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+sub {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    bottom: -0.25em
+}
+
+sup {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em
+}
+
+dl {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+dt {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+dd {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+ol {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none
+}
+
+ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none
+}
+
+li {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+form {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+label {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #414141
+}
+
+legend {
+    border: 0;
+    margin: 0;
+    padding: 10px 0 10px 7px;
+    color: #fff;
+    background: #3F4140;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    display: block;
+    font-size: 1.143em
+}
+
+table {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+caption {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+tbody {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+tfoot {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+thead {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+tr {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+th {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+td {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+.root_container {
+    z-index: 1;
+    min-height: 100%;
+    margin-bottom: -10px\0/;
+    margin-bottom: -10px\9;
+    margin-bottom: -10px\0/
+}
+
+@media screen and (orientation:landscape) {
+    #MB37 .root_container {
+        margin-bottom: 0;
+    }
+}
+
+#MB37 .root_container {
+    margin-bottom: -31px
+}
+
+article {
+    display: block
+}
+
+aside {
+    display: block
+}
+
+figure {
+    display: block;
+    position: relative;
+    margin: 0
+}
+
+figure img {
+    display: block
+}
+
+figcaption {
+    display: block
+}
+
+hgroup {
+    display: block
+}
+
+footer {
+    display: block
+}
+
+header {
+    display: block
+}
+
+nav {
+    display: block
+}
+
+section {
+    display: block
+}
+
+video {
+    display: block
+}
+
+a img {
+    border: 0
+}
+
+embed {
+    max-width: 100%
+}
+
+#MB49 .frmBlk {
+    padding: 0
+}
+
+#MB49 .frmBlk p {
+    line-height: 1.2em;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+#MQ01 .frmBlk p {
+    line-height: 1.2em;
+    padding-bottom: 0
+}
+
+kbd {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em
+}
+
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em
+}
+
+hr {
+    display: none
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+audio:not([controls]) {
+    display: none
+}
+
+#MB37 input[type="text"] {
+    border: 1px solid #E3E5E5;
+    font-size: 1em;
+    border: 1px solid #E3E5E5
+}
+
+#MB37 input[type="password"] {
+    border: 1px solid #E3E5E5;
+    font-size: 1em;
+    border: 1px solid #E3E5E5
+}
+
+.navigation {
+    padding: 0 8px 8px
+}
+
+#MB41 .navigation {
+    border-top: 1px solid #E3E5E5;
+    padding: 12px 8px
+}
+
+#MB18 .navigation {
+    border-top: 1px solid #E3E5E5;
+    padding: 12px 8px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 4px
+}
+
+#MB19 .navigation {
+    border-top: 1px solid #E3E5E5;
+    padding: 12px 8px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 4px
+}
+
+.navigation h2 {
+    display: none
+}
+
+#navPlaceHolder a {
+    background: #1B75BC;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 5px 7px;
+    text-decoration: none;
+    margin-bottom: 4px
+}
+
+#navPlaceHolder a:hover {
+    background: #0095cc
+}
+
+body:first-of-type {
+    background: -webkit-radial-gradient(circle, #318FD9, #184773)
+}
+
+body:not(:-moz-handler-blocked) {
+    background: -moz-radial-gradient(circle, #318FD9, #184773)
+}
+
+input {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+select {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    padding: 3px 2px
+}
+
+textarea {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+input[type="checkbox"] {
+    appearance: checkbox;
+    width: 15px\9;
+    height: 15px\0/;
+    margin: 0;
+    cursor: pointer;
+    background: #fff;
+    margin-right: 8px;
+    border: 0\0/;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle\0/;
+    vertical-align: middle\0/;
+    border: 0\9;
+    border: 0\0/;
+    width: 15px\9;
+    height: 15px\0/;
+    -moz-appearance: checkbox;
+    -webkit-appearance: checkbox
+}
+
+.frmBlk input[type="text"] {
+    width: 95%
+}
+
+.frmBlk textarea {
+    width: 95%
+}
+
+.page_body {
+    float: left;
+    margin-bottom: 12px;
+    width: 100%
+}
+
+#MB01 h1 {
+    display: none
+}
+
+#MB01 h3 {
+    display: none
+}
+
+#MB01 .nil a {
+    color: #000 !important
+}
+
+#MB01 #MB01Accts .r a {
+    color: #50a000
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0
+}
+
+.hidden {
+    display: inline;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0
+}
+
+#navPlaceHolder {
+    display: inline-block
+}
+
+#navPlaceHolder>li {
+    display: inline-block;
+    margin-right: 4px
+}
+
+#crumbs {
+    margin-bottom: 5px
+}
+
+#crumbs a {
+    background: none repeat scroll 0 0 #0095CC;
+    color: #FFFFFF;
+    font-size: 0.85em;
+    margin-left: 8px;
+    margin-top: 8px;
+    padding: 4px 6px;
+    display: inline-block
+}
+
+.table_navigation select {
+    vertical-align: middle;
+    margin-top: 6px;
+    word-spacing: normal;
+    width: auto;
+    margin-left: 4px
+}
+
+.table_navigation .tableNavSizeBtn_ {
+    margin-left: 4px !important;
+    text-align: center;
+    padding: 5px 4px 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px
+}
+
+.pagination .btnd {
+    background-color: #bcbcbc !important
+}
+
+.pagination .btnd:hover {
+    background-color: #bcbcbc !important
+}
+
+#MB33 .flcp {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    float: none;
+    text-align: left
+}
+
+#MB34 .flcp {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    float: none;
+    text-align: left
+}
+
+#MB49 .pgbtns .btn_ {
+    padding: 5px 8px 4px;
+    margin-right: 4px;
+    font-size: 1.2em
+}
+
+#MB24 .entryarearow {
+    padding: 8px 8px 12px
+}
+
+.flro:last-child {
+    border: 0
+}
+
+#MB49 .pgbtns .btn_grey {
+    background: #e4e5e5;
+    font-size: 1.2em;
+    color: #000;
+    border-color: #e4e5e5
+}
+
+p .btn_ {
+    padding: 4px 0 !important
+}
+
+.linkbtn {
+    color: #414141 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important
+}
+
+.btnd {
+    margin-right: 8px;
+    background: #e4e5e5 !important;
+    border-color: #e4e5e5 !important
+}
+
+.buttons .btnd {
+    font-size: 1.2em
+}
+
+.buttons .btn_ {
+    padding: 5px 8px 4px;
+    font-size: 1.2em
+}
+
+.buttons .btn_grey {
+    background: #e4e5e5;
+    font-size: 1.2em;
+    color: #000;
+    border-color: #e4e5e5
+}
+
+.buttons .btn_grey:hover {
+    background: #ccc
+}
+
+.example_text {
+    font-size: 0.9em;
+    color: #414141;
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.example_text a {
+    color: #414141;
+    text-decoration: underline
+}
+
+.buttons button {
+    cursor: pointer;
+    background: #DC7e28;
+    border: 1px solid #DC7e28;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    letter-spacing: normal
+}
+
+#MB49 .pgbtns input {
+    cursor: pointer;
+    background: #DC7e28;
+    border: 1px solid #DC7e28;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.5em
+}
+
+.buttons input:hover {
+    background: #f79526
+}
+
+#MB49 .pgbtns input:hover {
+    background: #f79526
+}
+
+#MB01 h2 {
+    padding: 2px 0 11px
+}
+
+#MB43 h3 {
+    font-size: 1.429em;
+    font-weight: normal
+}
+
+.headingLegend {
+    margin: 0;
+    background: #DC7E28;
+    color: #fff;
+    font-size: 1.429em;
+    font-weight: normal;
+    padding: 7px 8px 7px;
+    line-height: normal
+}
+
+#MB49 h2 {
+    margin: 0;
+    background: #DC7E28;
+    color: #fff;
+    font-size: 1.429em;
+    font-weight: normal;
+    padding: 7px 8px 7px;
+    line-height: normal;
+    margin-bottom: 12px
+}
+
+.center {
+    text-align: center
+}
+
+#MB49 .center {
+    text-align: center
+}
+
+.boq-h1 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1.563em !important
+}
+
+.boq-h2 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1.438em !important;
+    margin-bottom: 0 !important
+}
+
+.boq-h3 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1.313em !important
+}
+
+.boq-h4 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1.188em !important
+}
+
+.boq-h5 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1.063em !important
+}
+
+.boq-h6 {
+    margin: 0;
+    background: #DC7E28;
+    color: #FFF;
+    font-weight: bold;
+    padding: 12px 0 0 12px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    font-size: 1em !important
+}
+
+#MB46 .headingLegend {
+    background: #3F4140;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.143em;
+    font-weight: bold;
+    padding: 10px 0 10px 7px;
+    text-align: left;
+    width: 100%
+}
+
+#MB43trans h4 {
+    color: #fff;
+    background: #3F4141;
+    text-align: left;
+    padding: 11px 0 10px 7px;
+    float: left;
+    width: 100%;
+    font-size: 1.143em
+}
+
+.icon {
+    background: url(/static/personal-cabinet/images/au/boq/icons-set.png) no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px
+}
+
+.icon_biller {
+    background-position: 0 -124px
+}
+
+.icon_cross {
+    background-position: 0 -37px
+}
+
+.icon_check {
+    background-position: 0 -80px
+}
+
+.icon_info {
+    background-position: 0 4px
+}
+
+.icon_inttrans {
+    background-position: 0 -298px
+}
+
+.icon_bpay {
+    background-position: 0px -426px
+}
+
+.icon_group {
+    background-position: 0 -253px
+}
+
+.icon_user {
+    background-position: 0 -165px
+}
+
+.icon_noaccess {
+    background-position: 0 -209px
+}
+
+.icon_payee {
+    background-position: 0 -165px
+}
+
+.icon_p2p {
+    background-position: 0 -503px
+}
+
+#MB18 .icon {
+    vertical-align: middle
+}
+
+#MB33 .icon {
+    vertical-align: middle
+}
+
+#MB19 .icon {
+    vertical-align: middle
+}
+
+h3 .icon_biller {
+    background-position: -40px -129px
+}
+
+.headlink .icon_biller {
+    background-position: -40px -127px
+}
+
+.headlink .icon_cross {
+    background-position: -40px -41px
+}
+
+h3 .icon_cross {
+    background-position: -40px -44px
+}
+
+.headlink .icon_check {
+    background-position: -40px -84px
+}
+
+h3 .icon_check {
+    background-position: -40px -86px
+}
+
+.headlink .icon_info {
+    background-position: -40px 1px
+}
+
+h3 .icon_info {
+    background-position: -40px -1px
+}
+
+.headlink .icon_inttrans {
+    background-position: -40px -300px
+}
+
+h3 .icon_inttrans {
+    background-position: -40px -303px
+}
+
+.headlink .icon_bpay {
+    background-position: -40px -429px
+}
+
+h3 .icon_bpay {
+    background-position: -40px -431px
+}
+
+.headlink .icon_group {
+    background-position: -40px -256px
+}
+
+h3 .icon_group {
+    background-position: -40px -259px
+}
+
+.headlink .icon_user {
+    background-position: -40px -170px
+}
+
+h3 .icon_user {
+    background-position: -40px -170px
+}
+
+.headlink .icon_noaccess {
+    background-position: -40px -214px
+}
+
+h3 .icon_noaccess {
+    background-position: -40px -213px
+}
+
+h3 .icon_payee {
+    background-position: -40px -172px
+}
+
+.headlink .icon_payee {
+    background-position: -40px -170px
+}
+
+#MB28 #navPlaceHolder a {
+    padding: 9px 6px
+}
+
+#MB19 #navPlaceHolder a {
+    padding: 9px 6px
+}
+
+#MB18 #navPlaceHolder a {
+    padding: 9px 6px
+}
+
+#MB28 .frmBlk {
+    margin-bottom: 0
+}
+
+#MB18 .frmBlk {
+    margin-bottom: 0
+}
+
+#MB19 .frmBlk {
+    margin-bottom: 0
+}
+
+#MB28 .navigation {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 4px
+}
+
+#MB28 .entryareadetail {
+    line-height: 1.2em
+}
+
+#MB28 .example_text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    font-weight: bold
+}
+
+#MB28 #navPlaceHolder>li {
+    margin-bottom: 4px
+}
+
+#MB37 h1 {
+    display: none
+}
+
+#MB37 .main_content img {
+    margin-top: -2px;
+    padding: 0.5%
+}
+
+#accesscodefields.flt {
+    float: left;
+    margin-top: 1.5em;
+    font-size: 1.5em
+}
+
+#usersignonfields.flt {
+    float: left;
+    margin-top: 1.5em;
+    font-size: 1.5em
+}
+
+#useridfields.flt {
+    float: left;
+    margin-top: 1.5em;
+    font-size: 1.5em
+}
+
+.root_container #useridfields {
+    width: 99%
+}
+
+.root_container #usersignonfields {
+    width: 99%
+}
+
+.root_container #accesscodefields {
+    width: 99%
+}
+
+.login-form label {
+    color: #616161;
+    display: inline-block;
+    padding: 0 0.5em;
+    width: 40%;
+    vertical-align: middle;
+    font-size: 1em
+}
+
+.root_container #useridfields #usersignonfields #accesscodefields {
+    float: left;
+    padding: 0
+}
+
+#accesscodefields label {
+    color: #666666;
+    vertical-align: middle;
+    width: 44%;
+    text-transform: capitalize;
+    padding: 0
+}
+
+#usersignonfields label {
+    color: #666666;
+    vertical-align: middle;
+    width: 44%;
+    text-transform: capitalize;
+    padding: 0
+}
+
+#useridfields label {
+    color: #666666;
+    vertical-align: middle;
+    width: 44%;
+    text-transform: capitalize;
+    padding: 0
+}
+
+#accesscodefields input {
+    font-weight: bolder;
+    vertical-align: middle;
+    width: 54%
+}
+
+#usersignonfields input {
+    font-weight: bolder;
+    vertical-align: middle;
+    width: 54%
+}
+
+#useridfields input {
+    font-weight: bolder;
+    vertical-align: middle;
+    width: 54%
+}
+
+.buttons a {
+    width: 96.75%;
+    display: block;
+    text-align: center;
+    clear: both;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold
+}
+
+#MB37 .buttons a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px !important
+}
+
+#MB37 .buttons input {
+    font-size: 1.8em;
+    text-transform: capitalize
+}
+
+.buttons {
+    letter-spacing: -4px;
+    margin-bottom: 20px;
+    clear: both
+}
+
+#MB37 .buttons .btn_ {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+#MB37 .heading {
+    background: transparent;
+    box-shadow: none;
+    height: 70px;
+    -webkit-box-shadow: 0;
+    position: static;
+    padding: 7px 0 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0
+}
+
+#MB37 .heading img {
+    width: auto !important;
+    margin-left: 0
+}
+
+#main_content {
+    padding: 9px 8px 8px
+}
+
+#MB37 #main_content {
+    padding-top: 0 !important
+}
+
+#MB42 .frmBlk a {
+    color: #414141
+}
+
+#MB42 h2 {
+    padding: 2px 0 11px
+}
+
+.login-form {
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    padding: 0
+}
+
+.login-form>div {
+    padding: 13px 20px 13px 19px
+}
+
+#usedifferentuser a {
+    background: none repeat scroll 0 0 #dc7e28;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 0 12px 0
+}
+
+#MB37 .powered_by {
+    padding-left: 16px
+}
+
+#sign_box p {
+    color: #ffffff
+}
+
+.pg_btm {
+    background: url(/static/personal-cabinet/images/au/boq/padlock_16.png) no-repeat 3% 11px;
+    padding: 12px 0 0 7%;
+    color: #fff
+}
+
+.footer {
+    z-index: 999 !important;
+    background: #303030;
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    color: #fff !important;
+    clear: both;
+    position: relative;
+    padding: 4px 7px 5px;
+    font-size: 0.571em;
+    margin-bottom: -12px !important
+}
+
+#MB37 .footer {
+    padding: 5px 7px 7px;
+    position: absolute !important
+}
+
+.padlock_text {
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 16px;
+    height: 11px;
+    background: url(/static/personal-cabinet/images/au/boq/icons-set.png) no-repeat -40px -391px
+}
+
+.powered_by {
+    font-weight: bold;
+    position: relative
+}
+
+.sid {
+    font-weight: bold;
+    float: right !important
+}
+
+#MB37 .heading-wrapper {
+    display: inline;
+    position: relative;
+    background: none
+}
+
+#MB11 .heading {
+    margin-top: -5px\0/;
+    margin-top: -5px\0/;
+}
+
+#MB14 .heading {
+    margin-top: -5px\0/;
+    margin-top: -5px\0/
+}
+
+#MB16 .heading {
+    margin-top: -5px\0/;
+    margin-top: -5px\0/
+}
+
+#MB11 #menuHead {
+    top: -5px\0/;
+    top: -5px\0/
+}
+
+#MB14 #menuHead {
+    top: -5px\0/;
+    top: -5px\0/
+}
+
+#MB16 #menuHead {
+    top: -5px\0/;
+    top: -5px\0/
+}
+
+.prominent_link a {
+    text-decoration: none;
+    font-size: 9px
+}
+
+#action_btn.prominent_link a {
+    padding: 7px 6px 7px 14px
+}
+
+#MB37 .page_body {
+    padding-top: 0
+}
+
+#MB42 .heading {
+    width: 100%;
+    margin: 0
+}
+
+#MB42 .heading img {
+    margin-left: 0
+}
+
+.heading .sign_out {
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    z-index: 997
+}
+
+.heading .sign_out a {
+    display: inline-block;
+    height: 45px;
+    padding: 31px 0 0 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    width: 45px
+}
+
+.heading {
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+    background: none repeat scroll 0 0 #303030
+}
+
+.heading img {
+    width: 85px;
+    margin-top: 13px;
+    box-sizing: border-box
+}
+
+.heading-wrapper {
+    height: 45px;
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+#sign_out {
+    height: 45px;
+    right: 0;
+    top: 0;
+    width: 45px
+}
+
+.sign_out a {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/LogOffBtn.jpg") no-repeat scroll 0 center transparent;
+    display: inline-block;
+    height: 45px;
+    padding: 31px 0 0 0;
+    text-align: center;
+    position: relative;
+    width: 45px
+}
+
+#menuHead {
+    position: absolute;
+    top: 0
+}
+
+#menuHead ul {
+    border-bottom: 1px solid #000000;
+    display: none;
+    margin-top: 45px;
+    width: 84%
+}
+
+#menuHead li {
+    color: #FFFFFF;
+    text-align: left
+}
+
+.off-canvas .menu-close {
+    left: 0 !important
+}
+
+#menuHead .menu-close {
+    display: block;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/MenuBtn.jpg") no-repeat scroll left center #3F4140;
+    border-color: -moz-use-text-color #000000 #000000 -moz-use-text-color;
+    border-image: none;
+    border-right: 0 solid #000000;
+    border-style: none solid solid none;
+    border-width: 0;
+    height: 45px;
+    left: 0;
+    position: absolute;
+    text-indent: -999em;
+    width: 45px;
+    z-index: 999999
+}
+
+#menuHead.off-canvas ul {
+    display: block;
+    z-index: 9
+}
+
+#menuHead .selected a {
+    background-color: #DC7E28;
+    font-weight: bold
+}
+
+.selected a:hover {
+    background-color: #DC7E28 !important;
+    font-weight: bold
+}
+
+#menuHead li a:hover {
+    background-color: #0095CC
+}
+
+#menuHead.off-canvas {
+    left: 0;
+    width: 100%
+}
+
+#menuHead li a {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #484848;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1em;
+    padding: 8px 20px 7px 35px;
+    text-decoration: none;
+    width: 100%
+}
+
+#menuHead li.icn-more {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #484848;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1em;
+    padding: 8px 20px 7px 35px;
+    text-decoration: none;
+    width: 100%
+}
+
+#menuHead li.icn-home a {
+    background-position: 0 7px
+}
+
+#menuHead li.icn-transfers a {
+    background-position: 0 -274px
+}
+
+#menuHead li.icn-paybill a {
+    background-position: 0 -139px
+}
+
+#menuHead li.icn-pendingauth a {
+    background-position: 0 -1133px
+}
+
+#menuHead li.icn-pending a {
+    background-position: 0 -729px
+}
+
+#menuHead li.icn-payeebillers a {
+    background-position: 0 -419px
+}
+
+#menuHead li.icn-history a {
+    background-position: 0 -999px
+}
+
+#menuHead li.icn-receivedbills a {
+    background-position: 0 -1269px
+}
+
+#menuHead li.icn-messages a {
+    background-position: 0 -584px
+}
+
+#menuHead li.icn-setting a {
+    background-position: 0 -1403px
+}
+
+#MB01Accts {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em
+}
+
+#MB01Accts td {
+    border-right: 0px;
+    border-left: 0px;
+    background: #fff;
+    border-top: 0px;
+    border-bottom: 2px solid #318FD9
+}
+
+#MB01Accts a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #414141;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 8px 9px;
+    font-size: 1em
+}
+
+.flt a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #414141;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 8px 9px;
+    font-size: 1em
+}
+
+#MB01Accts a:hover {
+    text-decoration: underline
+}
+
+.flt a:hover {
+    text-decoration: underline
+}
+
+.flblink {
+    color: #414141;
+    display: block;
+    text-align: left;
+    text-decoration: none
+}
+
+#MB17receipientsList .flr {
+    border-bottom: 0
+}
+
+#MB17receipientsList .flt {
+    border-bottom: 0
+}
+
+#MB17receipientsList .flro {
+    border-bottom: 0
+}
+
+#MB17receipientsList .flt a {
+    font-weight: bold;
+    padding: 6px 8px 10px
+}
+
+#MB17 .flc {
+    border-bottom: 1px solid #318FD9
+}
+
+#MB17 .flt a {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
+}
+
+#MB01Accts .r a {
+    text-align: right;
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important;
+    padding-right: 25px;
+    font-weight: bold
+}
+
+.sessDtls {
+    background: #fff;
+    padding: 10px
+}
+
+.flc .flblinkbtn_ {
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+#MB07 .flc .flblinkbtn_ {
+    padding: 8px 8px 7px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 4px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px
+}
+
+#MB26 .flc .flblinkbtn_ {
+    padding: 8px 8px 7px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 4px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px
+}
+
+#MB27 .flc .flblinkbtn_ {
+    padding: 8px 8px 7px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 4px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px
+}
+
+#MB07 .flro {
+    float: left;
+    width: 100%
+}
+
+#MB07 .flr {
+    float: left;
+    width: 100%
+}
+
+#MB26 .flro {
+    float: left;
+    width: 100%
+}
+
+#MB26 .flr {
+    float: left;
+    width: 100%
+}
+
+.pgbtns {
+    margin: 10px 0 0
+}
+
+#MB42 .pgbtns {
+    margin: 12px 0 0
+}
+
+#MB49 .pgbtns {
+    margin: 12px 0 0
+}
+
+.pgbtns input {
+    margin-bottom: 4px
+}
+
+.flro .flc:last-child {
+    border: 0
+}
+
+.errorMsgTop {
+    text-align: left;
+    font-size: 0.9em;
+    display: block;
+    background: #fff
+}
+
+.statmsg {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top;
+    border: 1px solid #f9b629;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+.campaignmsg {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-campaign.jpg") no-repeat scroll left top #fff;
+    border: 1px solid #00b2b6;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+#feedbackerror {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    border: 1px solid #f9b629;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+#feedback {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    border: 1px solid #f9b629;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+noscript {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    border: 1px solid #f9b629;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+#feedbackstatus {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #fff;
+    border: 1px solid #9dcd3d;
+    padding: 12px 8px 12px 49px;
+    text-align: left;
+    margin-bottom: 9px;
+    display: block
+}
+
+#MB42 .entryarearownobdr {
+    padding: 8px 8px 10px
+}
+
+#MB37 noscript {
+    margin-bottom: 12px;
+    display: block
+}
+
+.errmsg strong {
+    color: #8E8E8E
+}
+
+#feedbackerror strong {
+    color: #8E8E8E
+}
+
+.campaignmsg a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #DC7E28
+}
+
+.campaignmsg a:hover {
+    text-decoration: none
+}
+
+.accountDetails {
+    background: none repeat scroll right top #FFFFFF;
+    border-radius: 2px 2px 0 0;
+    margin: 0 0 12px;
+    width: 100%;
+    overflow: hidden
+}
+
+.detailView {
+    background: none repeat scroll right top #FFFFFF;
+    border-radius: 2px 2px 0 0;
+    margin: 0 0 12px;
+    width: 100%;
+    float: left;
+    overflow: hidden
+}
+
+#MB18 .detailView {
+    margin: 0
+}
+
+.detailSummary {
+    color: #626262;
+    display: inline-block;
+    padding: 7px
+}
+
+.accountsummary {
+    color: #626262;
+    display: inline-block;
+    padding: 6px 7px 8px
+}
+
+.accountsummary.boldText .label {
+    color: #727272;
+    display: block;
+    padding: 2px 0 2px 4px;
+    font-weight: normal
+}
+
+.detailSummary.boldText .label {
+    color: #727272;
+    display: block;
+    padding: 2px 0 2px 4px;
+    font-weight: normal
+}
+
+.accountsummary.boldText span {
+    color: #000;
+    padding: 0 4px 0 0
+}
+
+.detailSummary.boldText span {
+    color: #000;
+    padding: 0 4px 0 0
+}
+
+.accountsummary:nth-child(2n+1) {
+    float: right;
+    text-align: right;
+    width: 50% !important;
+    border-top: 1px solid #E4E5E5
+}
+
+.detailSummary:nth-child(2n+1) {
+    float: right;
+    text-align: right;
+    width: 50% !important;
+    border-top: 1px solid #E4E5E5
+}
+
+.accountsummary.avlb {
+    width: 100% !important;
+    text-align: right;
+    border-top: 1px solid #E4E5E5
+}
+
+.detailSummary.avlb {
+    width: 100% !important;
+    text-align: right;
+    border-top: 1px solid #E4E5E5
+}
+
+#MB43trans {
+    background-color: #fff;
+    font-size: 1em
+}
+
+#MB43trans .l {
+    word-wrap: break-word;
+    display: block;
+    padding: 9px 8px 8px;
+    border-bottom: 1px solid #E3E5E5;
+    float: left;
+    width: 100%
+}
+
+#MB43trans .l:nth-child(even) {
+    background: #fff
+}
+
+#MB43trans .l:nth-child(odd) {
+    background: #f1f4f7
+}
+
+.flcNegative {}
+
+.transDetail {
+    display: inline-block;
+    width: 50%;
+    word-wrap: break-word;
+    float: left
+}
+
+#MB43trans .r {
+    display: inline-block;
+    padding: 0;
+    text-align: right;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold
+}
+
+#MB43 .transDetail {
+    line-height: 1.2em
+}
+
+#MB43 .flc .r {
+    line-height: 1.2em
+}
+
+.label.acno {
+    font-size: 1em !important
+}
+
+.accountsummary.boldText .acno {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 1.3em
+}
+
+.detailSummary.boldText .acno {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 1.3em
+}
+
+.table_navigation {
+    float: left;
+    word-spacing: -1em;
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 1em;
+    text-align: right;
+    vertical-align: middle;
+    border: 0;
+    padding: 11px 8px 12px;
+    background-color: #FFF;
+    color: #333
+}
+
+.pagination .page_info {
+    display: block;
+    vertical-align: top;
+    word-spacing: normal
+}
+
+.previous_page {
+    padding: 0;
+    margin: 0;
+    background: #184773 url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important;
+    display: inline-block;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    padding-left: 18px !important
+}
+
+.next_page {
+    padding: 0;
+    margin: 0;
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat scroll right center #184773 !important;
+    display: inline-block;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    padding-right: 18px !important
+}
+
+.tableNavSizeBtn_ {
+    padding: 0;
+    margin: 0;
+    background: #184773 url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center;
+    display: inline-block;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: 5px;
+    background-image: none
+}
+
+.tableNavSizeBtn_:hover {
+    background: #0095cc !important
+}
+
+.previous_page:hover {
+    background: #0095cc url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important
+}
+
+.next_page:hover {
+    background: #0095cc url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center !important
+}
+
+.rgt {
+    float: right
+}
+
+.entryareahead {
+    color: #fff;
+    background: #3f4140
+}
+
+h3.flgroupheading {
+    background: #3f4140 !important;
+    border-radius: 0 !important;
+    padding: 11px 7px
+}
+
+#MB25 h3.flgroupheading {
+    background: #3f4140 !important;
+    color: #fff;
+    padding: 7px 8px;
+    width: 100%;
+    border: 0;
+    float: left
+}
+
+#MB08 h3.flgroupheading {
+    background: #3f4140 !important;
+    color: #fff;
+    padding: 7px 8px;
+    width: 100%;
+    border: 0
+}
+
+#displaysettings h2 {
+    background: #3f4140 !important;
+    border-radius: 0;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 11px 8px
+}
+
+.entryareahead a {
+    text-decoration: none
+}
+
+.entryarearow {
+    padding: 9px 8px 12px;
+    border-bottom: 1px solid #E3E5E5
+}
+
+.entryareadetail {
+    border-bottom: 1px solid #E3E5E5;
+    padding: 9px 8px 8px
+}
+
+#MB11 .entryareadetail {
+    padding: 9px 8px 9px
+}
+
+#MB14 .entryareadetail {
+    padding: 9px 8px 9px
+}
+
+#MB16 .entryareadetail {
+    padding: 9px 8px 9px
+}
+
+#MB48 .entryareadetail {
+    padding: 9px 8px 9px
+}
+
+#MB11 .entryarearow {
+    padding: 8px 8px 8px
+}
+
+#MB14 .entryarearow {
+    padding: 8px 8px 8px
+}
+
+#MB16 .entryarearow {
+    padding: 8px 8px 8px
+}
+
+#MB11 h1 {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    border: 1px solid #9dcd3d;
+    color: #414141;
+    display: block;
+    padding-left: 49px;
+    padding-top: 12px;
+    text-align: left
+}
+
+#MB14 h1 {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    border: 1px solid #9dcd3d;
+    color: #414141;
+    display: block;
+    padding-left: 49px;
+    padding-top: 12px;
+    text-align: left
+}
+
+#MB16 h1 {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    border: 1px solid #9dcd3d;
+    color: #414141;
+    display: block;
+    padding-left: 49px;
+    padding-top: 12px;
+    text-align: left
+}
+
+#MB48 h1 {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    border: 1px solid #9dcd3d;
+    color: #414141;
+    display: block;
+    padding-left: 49px;
+    padding-top: 12px;
+    text-align: left
+}
+
+.entryarearownobdr {
+    padding: 9px 8px 0
+}
+
+.entryarearow label {
+    display: block;
+    margin-bottom: 9px
+}
+
+#MB47 .entryarearownobdr {
+    padding: 8px 12px 8px 8px;
+    color: #414141
+}
+
+.entryareadetail label {
+    color: #414141;
+    display: block;
+    margin-bottom: 8px;
+    width: 90%
+}
+
+#enter_token_code>label {
+    padding-top: 8px
+}
+
+#MB24 .entryarearownobdr {
+    padding-bottom: 8px
+}
+
+.entryarearownobdr label {
+    display: block;
+    margin-bottom: 5px
+}
+
+.frmBlk {
+    background: #fff;
+    margin-bottom: 12px;
+    font-size: 1em;
+    line-height: 1.2em
+}
+
+#MB39 .table_navigation {
+    margin-top: -20px;
+    margin-bottom: 11px
+}
+
+#MB39 .frmBlk {
+    margin-bottom: 12px
+}
+
+.label.lblText {
+    width: 90%;
+    display: block;
+    color: #414141;
+    font-weight: normal
+}
+
+.lblText {
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 5px
+}
+
+.flro {
+    border-bottom: 1px solid #318FD9;
+    background: #fff;
+    font-size: 1em;
+    line-height: 1em
+}
+
+.flr {
+    border-bottom: 1px solid #318FD9;
+    background: #fff;
+    font-size: 1em;
+    line-height: 1em
+}
+
+.flt {
+    border-bottom: 1px solid #318FD9;
+    background: #fff;
+    font-size: 1em;
+    line-height: 1em
+}
+
+#MB33 .flc {
+    padding: 9px 8px
+}
+
+#MB34 .flc {
+    padding: 9px 8px
+}
+
+#MB07 .flc {
+    padding: 9px 8px;
+    background: #fff;
+    float: left;
+    width: 100%
+}
+
+#MB27 .flc {
+    padding: 9px 8px;
+    width: 100%;
+    background: #fff;
+    float: left
+}
+
+#MB41 .flc {
+    padding: 9px 8px
+}
+
+#MB40 .flc {
+    padding: 9px 8px
+}
+
+#MB26 .flc {
+    padding: 9px 8px;
+    width: 100%;
+    background: #fff;
+    float: left
+}
+
+MB07 .flr {
+    width: 100%
+}
+
+#MB27 .flro {
+    width: 100%;
+    float: left
+}
+
+#MB27 .flr {
+    width: 100%;
+    float: left
+}
+
+#MB07 .page_body {
+    float: left;
+    margin-bottom: 12px
+}
+
+.flc.entryareahead {
+    padding: 0 !important
+}
+
+.flc {
+    color: #414141;
+    border-bottom: 1px solid #E3E5E5
+}
+
+.flgroupheading {
+    color: #414141;
+    border-bottom: 1px solid #E3E5E5
+}
+
+#MB43 #MB43trans .l .flc {
+    border-bottom: 0;
+    vertical-align: top;
+    float: right;
+    word-wrap: break-word;
+    width: 50%
+}
+
+#MB43 .flt {
+    border-bottom: 1px solid #E3E5E5
+}
+
+#MB25 .flt {}
+
+#MB41 .entryarearow {
+    padding-top: 10px
+}
+
+#MB08 .flt {
+    border: 0
+}
+
+.headlink {
+    display: block;
+    padding: 7px 13px 7px 8px;
+    background: #3F4140 !important;
+    display: block;
+    font-size: 1.429em !important;
+    color: #e4e5e5 !important;
+    line-height: normal;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important
+}
+
+.flc img {
+    margin-left: 8px;
+    margin-top: 10px;
+    position: absolute
+}
+
+#MB27 .flc img {
+    margin: -4px 5px 0 0;
+    position: static
+}
+
+.table_navigation a {
+    margin: 5px 0 0 4px !important;
+    display: inline-block;
+    padding: 8px 7px
+}
+
+.table_navigation a.btnd.previous_page {
+    margin-left: 0 !important
+}
+
+.table_navigation a.previous_page {
+    margin-left: 0 !important
+}
+
+.table_navigation input {
+    margin: 5px 0 0
+}
+
+#MB08 .flc img {
+    display: none
+}
+
+#MB08 .flc {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/icons-set.png") no-repeat 8px -541px
+}
+
+#MB08 .flt .flblinkbtn_ {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    font-weight: bold;
+    color: #414141;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 24px 10px 26px
+}
+
+#MB17 .flt .flblinkbtn_ {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    font-weight: bold;
+    color: #414141;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 24px 10px 26px;
+    padding-left: 8px
+}
+
+#MB07 .headlink {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    padding: 7px 24px 7px 8px !important;
+    clear: both;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    display: block !important
+}
+
+#MB27 .headlink {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    padding: 7px 24px 7px 8px !important;
+    clear: both;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    display: block !important
+}
+
+#MB26 .headlink {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    padding: 7px 24px 7px 8px !important;
+    clear: both;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    display: block !important
+}
+
+#MB07 .headlink:hover {
+    text-decoration: underline
+}
+
+#MB27 .headlink:hover {
+    text-decoration: underline
+}
+
+#MB26 .headlink:hover {
+    text-decoration: underline
+}
+
+#MB25 .flt .flblinkbtn_ {
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    float: left;
+    width: 100%;
+    color: #414141;
+    font-size: 1em;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-right: 16px
+}
+
+.headlink>img {
+    margin-right: 3px
+}
+
+.flt .flblinkbtn_ {
+    background: none;
+    padding: 10px 8px 9px;
+    display: block;
+    margin-bottom: 0
+}
+
+.pgbtns a {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+#MB27 .flblinkbtn_ {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+.flblinkbtn_ {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+#MB26 .flblinkbtn_ {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+#MB07 .flblinkbtn_ {
+    font-size: 1.2em;
+    display: inline-block;
+    background: #dc7e28;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+.pgbtns a:hover {
+    background: #f79526 !important
+}
+
+.flc .flblinkbtn_:hover {
+    background: #f79526 !important
+}
+
+.flc .flblinkbtn_.btn_grey:hover {
+    background: #ccc !important
+}
+
+.flblinkbtn_:hover {
+    text-decoration: underline
+}
+
+#MB01Accts .flblinkbtn_:hover {
+    background-color: #fff !important
+}
+
+#MB26 .flc img {
+    float: left;
+    margin-right: 5px
+}
+
+.formBtn {
+    color: #fff;
+    text-decoration: none;
+    background: #1b75bc;
+    padding: 5px 8px;
+    display: inline-block;
+    margin: -2px 0 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff
+}
+
+.formBtn:hover {
+    background: #0095cc
+}
+
+.flcp {
+    float: right;
+    width: 60%;
+    text-align: left;
+    color: #000;
+    font-weight: bold
+}
+
+#MB25 .flro {
+    float: left;
+    width: 100%
+}
+
+#MB25 .flr {
+    float: left;
+    width: 100%
+}
+
+#MB25 .flc {
+    float: left;
+    width: 100%;
+    background: #fff
+}
+
+.flcval {
+    margin-top: 4px;
+    float: right;
+    padding-right: 8px;
+    font-weight: bold
+}
+
+.flcval:hover {
+    text-decoration: underline
+}
+
+#MB27 .flcp {
+    width: auto;
+    float: right;
+    text-align: right
+}
+
+#MB25 .flcp {
+    width: auto;
+    float: right
+}
+
+#MB07 .flcp {
+    text-align: right;
+    width: 58%;
+    display: inline-block;
+    vertical-align: top
+}
+
+#MB26 .flcp {
+    text-align: right
+}
+
+.btn_grey {
+    background: #E4E5E5 !important;
+    color: #000 !important
+}
+
+.btn_grey:hover {
+    background: #cccccc !important
+}
+
+#MB46 .example_text {
+    padding-top: 10px;
+    display: block
+}
+
+#MB42 .example_text {
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-top: 9px
+}
+
+#MB47 .example_text {
+    padding-bottom: 0
+}
+
+.headlink .summary-text {
+    color: #000;
+    font-size: 0.9em;
+    padding: 10px 8px 12px
+}
+
+body:before {
+    content: " ";
+    width: 100%;
+    height: 101%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient( 120deg, rgba(0, 58, 112, 0.9), rgba(0, 156, 222, 0.9)) !important
+}
+
+@media screen and (max-width:767px) {
+    body {
+        background-size: 6% !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        background-size: 11% !important;
+    }
+}
+
+#menuHead li.icn-eStatement a {
+    background-position: 0 -1575px
+}
+
+#MB49 .list-unordered {
+    margin-left: 5px;
+    display: list-item;
+    list-style-position: inside
+}
+
+#MB49 .boq-teal {
+    color: #00B2B5
+}
+
+#MB49 .font-25 {
+    font-size: 1.7em;
+    line-height: normal
+}
+
+#MB49 .boq-blue {
+    color: #1B75BC
+}
+
+#MB49 .boq-yellow {
+    color: #FEBD36
+}
+
+#MB49 .boq-bold {
+    font-weight: bold
+}
+
+#MB49 .font-arial-black {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-weight: bold
+}
+
+#MB49 .font-lucida-sans {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+.boq-h1.center {
+    text-align: center
+}
+
+.boq-h2.center {
+    text-align: center
+}
+
+.boq-h3.center {
+    text-align: center
+}
+
+.boq-h4.center {
+    text-align: center
+}
+
+.boq-h5.center {
+    text-align: center
+}
+
+.boq-h6.center {
+    text-align: center
+}
+
+.boq-blue {
+    color: #1B75BC
+}
+
+.boq-yellow {
+    color: #FEBD36
+}
+
+.boq-grey {
+    color: #E4E5E5
+}
+
+.boq-aqua {
+    color: #0095CC
+}
+
+.boq-teal {
+    color: #00B2B5
+}
+
+.boq-ochre {
+    color: #DC7E28
+}
+
+.boq-lime {
+    color: #9CCB3B
+}
+
+.boq-black {
+    color: #000000
+}
+
+.boq-white {
+    color: #ffffff
+}
+
+.boq-gray50 {
+    color: #7F7F7F
+}
+
+.boq-gray25 {
+    color: #C3C3C3
+}
+
+.boq-darkred {
+    color: #880015
+}
+
+.boq-darkbrown {
+    color: #5C2C0C
+}
+
+.boq-lightbrown {
+    color: #B97A57
+}
+
+.boq-red {
+    color: #FF0000
+}
+
+.boq-pink {
+    color: #FFAEC9
+}
+
+.boq-orange {
+    color: #FF7F27
+}
+
+.boq-gold {
+    color: #FFC90E
+}
+
+.boq-yellow2 {
+    color: #FFF200
+}
+
+.boq-green {
+    color: #008000
+}
+
+.boq-lime2 {
+    color: #B5E61D
+}
+
+.boq-darkblue {
+    color: #002060
+}
+
+.boq-lightblue {
+    color: #00B0F0
+}
+
+.boq-purple {
+    color: #7030A0
+}
+
+.boq-lavander {
+    color: #C8BFE7
+}
+
+.boq-bold {
+    font-weight: bold
+}
+
+.boq-italic {
+    font-style: italic
+}
+
+.boq-superscript {
+    vertical-align: super
+}
+
+.boq-subscript {
+    vertical-align: sub
+}
+
+.font-14 {
+    font-size: 14px
+}
+
+.font-15 {
+    font-size: 15px
+}
+
+.font-16 {
+    font-size: 16px
+}
+
+.font-17 {
+    font-size: 17px
+}
+
+.font-18 {
+    font-size: 18px
+}
+
+.font-19 {
+    font-size: 19px
+}
+
+.font-20 {
+    font-size: 20px
+}
+
+.font-21 {
+    font-size: 21px
+}
+
+.font-22 {
+    font-size: 22px
+}
+
+.font-23 {
+    font-size: 23px
+}
+
+.font-24 {
+    font-size: 24px
+}
+
+.font-25 {
+    font-size: 25px
+}
+
+.font-26 {
+    font-size: 26px
+}
+
+.font-27 {
+    font-size: 27px
+}
+
+.font-28 {
+    font-size: 28px
+}
+
+.font-29 {
+    font-size: 29px
+}
+
+.font-30 {
+    font-size: 30px
+}
+
+.font-georgia {
+    font-family: Georgia, serif
+}
+
+.font-palatino {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+.font-times {
+    font-family: "Times New Roman", Times, serif
+}
+
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.font-arial-black {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-weight: 900
+}
+
+.font-comic-sans {
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+.font-impact {
+    font-family: Impact, Charcoal, sans-serif
+}
+
+.font-lucida-sans {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+.font-tahoma {
+    font-family: Tahoma, Geneva, sans-serif
+}
+
+.font-trebuchet {
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.font-verdana {
+    font-family: Verdana, Geneva, sans-serif
+}
+
+.font-courier {
+    font-family: "Courier New", Courier, monospace
+}
+
+.font-lucida-console {
+    font-family: "Lucida Console", Monaco, monospace
+}
+
+.font-calibri {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif
+}
+
+.list-unordered {
+    margin-left: 5px;
+    display: list-item;
+    list-style-position: inside
+}
+
+.list-ordered {
+    margin-left: 5px
+}
+
+#MB99 .frmBlk {
+    margin-bottom: 0;
+    margin-top: 10px
+}
+
+#MB99 form br {
+    display: none
+}
+
+#MB99 #searchdetail label {
+    display: block;
+    margin-bottom: 10px
+}
+
+#MB99 #dateFields input {
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 2px 5px;
+    margin-bottom: 20px
+}
+
+#MB99 .entryarearow {
+    border: none;
+    padding: 10px
+}
+
+#MB99 #searchdetail {
+    background-color: none;
+    padding: 10px 10px 10px 0
+}
+
+#MB99 #searchbasic h2 {
+    background-color: transparent
+}
+
+#MB99 #searchbasic h2 span {
+    display: none
+}
+
+#MB99 .buttons {
+    margin-bottom: 10px;
+    clear: both;
+    font-size: 12px
+}
+
+#MB99 #searchBtn.buttons input {
+    font-size: 1.5em;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 8px 4px
+}
+
+#MB99 #searchBtn.buttons label {
+    display: none
+}
+
+#MB99 .flt .flblinkbtn_ {
+    background: #dc7e28;
+    width: 100%;
+    padding: 5px
+}
+
+#MB99 .frmBlk .flbtc label {
+    background-color: #3f4140;
+    display: block;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff
+}
+
+#MB99 .frmBlk .flbtc input.flblinkbtn_ {
+    background: #fff;
+    color: #474242;
+    border: none;
+    text-align: left;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
+}
+
+#MB99 .frmBlk>.flt {
+    border: none
+}
+
+@media screen\9 {
+    body {
+        background-image: url(images/iebg.png) !important;
+        background-repeat: repeat-x !important;
+    }
+}
+
+@media screen\0 {
+    body {
+        background-image: url(images/iebg.png) !important;
+        background-repeat: repeat-x !important;
+    }
+}
+
+@media screen and (min-width:0\0) {
+    body {
+        background-image: url(images/iebg.png) !important;
+        background-repeat: repeat-x !important;
+    }
+}
+
+@media (-ms-high-contrast: none) {
+    body {
+        /*background-image: linear-gradient(120deg, rgba(0, 58, 112, 0.95), rgba(0, 156, 222, 0.95)), url(images/Arrows-MB-TextureStrip.png) !important;
+		background-repeat: no-repeat, repeat !important;
+		background-size: cover, 40% !important;*/
+        /*background-attachment: fixed !important;*/
+        /*background-attachment: fixed;*/
+        background: #318fd9 url(images/Arrows-MB-TextureStrip.png) repeat-x left top !important;
+    }
+}
+
+(-ms-high-contrast: active) {
+    body {
+        /*background-image: linear-gradient(120deg, rgba(0, 58, 112, 0.95), rgba(0, 156, 222, 0.95)), url(images/Arrows-MB-TextureStrip.png) !important;
+		background-repeat: no-repeat, repeat !important;
+		background-size: cover, 40% !important;*/
+        /*background-attachment: fixed !important;*/
+        /*background-attachment: fixed;*/
+        background: #318fd9 url(images/Arrows-MB-TextureStrip.png) repeat-x left top !important;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:769px) {}
+
+@media screen and (max-width:768px) {}
+
+#MB07 .flcpOldLimit {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.footer .powered_by a {
+    display: none
+}
+
+.accountsummary.bsb {
+    width: 50% !important;
+    float: left;
+    clear: both;
+    border-top: 1px solid #E4E5E5
+}
+
+.accountsummary.boldText.bsb .label {
+    color: #727272;
+    display: block;
+    padding: 0;
+    font-weight: normal
+}

@@ -1,0 +1,189 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+.row {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.div-ayuda {
+    color: #495057;
+}
+
+.img-and-text .text {
+    font-style: oblique;
+    font-size: calc(0.6em + 0.20vw) !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.img-and-text .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+
+.img-and-text .row div {
+    display: flex;
+    justify-content: center;
+}
+
+.img-and-text .row img {
+    max-height: 65px;
+}
+
+.title-message {
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(0.7rem + 0.2vw) !important;
+}
+
+.import-message {
+    font-size: calc(0.65rem + 0.2vw) !important;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.middle-message {
+    font-size: calc(0.65rem + 0.2vw) !important;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+#oobForm small {
+    font-size: calc(0.55rem + 0.2vw) !important;
+}
+
+.botoncancelar {
+    color: #999999;
+}
+
+.botonconfirmar {
+    font-size: 1.25em;
+    background-color: #0f80b9;
+    color: #f9faff;
+    font-weight: bold;
+}
+
+input.input-text {
+    border: 1px solid #222;
+    height: calc(2.5em + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.progress {
+    width: calc(55px + 1vw);
+    height: calc(55px + 1vw);
+    background: none;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-value {
+    width: 100%;
+    height: 100%;
+}
+
+.center-childs div {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-scroll {
+    overflow-x: hidden;
+}
+
+.vertical-scroll p {
+    font-size: calc(0.70em + 0.30vw);
+}
+
+.vertical-scroll small {
+    font-size: calc(0.58em + 0.20vw);
+}
+
+.vertical-scroll h5 {
+    font-size: calc(1.2em + 0.3vw);
+}
+
+.vertical-scroll h4 {
+    font-size: calc(1rem + 0.40vw);
+}
+
+.vertical-scroll .img-logo {
+    max-height: calc(60px + 2.1vw);
+}
+
+.vertical-scroll .time-counter {
+    font-size: calc(1.2em + 0.3vw);
+}

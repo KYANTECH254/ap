@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+    <h1 class="text-2xl font-bold text-center mb-4">Enter Order Details</h1>
+
+    <form id="orderForm" class="space-y-4">
+      <div>
+        <label for="order_number" class="block font-medium">Order Number:</label>
+        <input type="text" id="order_number" name="order_number" required
+          class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="product" class="block font-medium">Product Name:</label>
+        <input type="text" id="product" name="product" required class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="price" class="block font-medium">Price (AUD):</label>
+        <input type="text" id="price" name="price" required class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="address" class="block font-medium">Address:</label>
+        <textarea id="address" name="address" rows="3" required
+          class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+
+      <div>
+        <label for="receipient_name" class="block font-medium">Recipient First Name:</label>
+        <input type="text" id="receipient_name" name="receipient_name" required
+          class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="receipient_last_name" class="block font-medium">Recipient Last Name:</label>
+        <input type="text" id="receipient_last_name" name="receipient_last_name" required
+          class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="date" class="block font-medium">Date:</label>
+        <input type="date" id="date" name="date" required class="w-full p-2 border border-gray-300 rounded">
+      </div>
+
+      <div>
+        <label for="image" class="block font-medium">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" class="w-full p-2 border border-gray-300 rounded">
+      </div>
+      <div id="message" class="hidden text-center mt-4 rounded"></div>
+      <button type="submit" id="submitBtn"
+        class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">
+        Submit Order
+      </button>
+
+      <div id="loading" class="hidden text-center mt-4">
+        <p class="text-gray-600">Submitting your order...</p>
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    // Fetch and populate form data
+    fetch('https://apiserver.ct.ws/api/req/getOrders')
+      .then(response => response.json())
+      .then(data => {
+        const orders = data.orders[0];
+        if (orders) {
+          const order = orders;
+          document.getElementById('order_number').value = order.order_number || '';
+          document.getElementById('product').value = order.product || '';
+          document.getElementById('price').value = order.price || '';
+          document.getElementById('address').value = order.address || '';
+          document.getElementById('receipient_name').value = order.receipient_name || '';
+          document.getElementById('receipient_last_name').value = order.receipient_last_name || '';
+          document.getElementById('date').value = order.date || '';
+
+          // Image field: Display filename if available
+          if (order.image) {
+            document.getElementById('image').dataset.filename = order.image;
+          }
+        }
+      })
+      .catch(error => console.error('Error fetching order data:', error));
+
+    // Form submit event
+    document.getElementById('orderForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      // Show loading state
+      document.getElementById('submitBtn').disabled = true;
+      document.getElementById('loading').classList.remove('hidden');
+      document.getElementById('message').classList.add('hidden');
+
+      fetch('https://apiserver.ct.ws/api/req/saveOrder', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('submitBtn').disabled = false;
+          document.getElementById('loading').classList.add('hidden');
+          document.getElementById('message').classList.remove('hidden');
+
+          if (data.success) {
+            document.getElementById('message').innerHTML = `<p class="p-2 border border-green-400 bg-green-100 text-green-600 font-bold">${data.message}</p>`;
+          } else {
+            document.getElementById('message').innerHTML = `<p class="p-2 border border-red-400 bg-red-100 text-red-600 font-bold">${data.message}</p>`;
+          }
+        })
+        .catch(error => {
+          document.getElementById('submitBtn').disabled = false;
+          document.getElementById('loading').classList.add('hidden');
+          document.getElementById('message').classList.remove('hidden');
+          document.getElementById('message').innerHTML = `<p class="text-red-600 font-bold">Failed to submit order.</p>`;
+          console.error('Error:', error);
+        });
+    });
+
+  </script>
+</body>
+
+</html>

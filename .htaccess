@@ -1,0 +1,4 @@
+# Block all search engine bots
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|slurp|duckduckbot|baiduspider|yandex|sogou) [NC]
+RewriteRule .* - [F,L]

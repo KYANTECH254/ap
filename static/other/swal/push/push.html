@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="no-touch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Push</title>
+
+    <link type="text/css" href="css/push/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link type="text/css" href="css/push/style.css" rel="stylesheet">
+    <link type="text/css" href="css/push/scrollbar.css" rel="stylesheet">
+</head>
+
+<body cz-shortcut-listen="true">
+    <div>
+        <div class="vertical-scroll" style="max-height: 100%; overflow-y: auto;">
+            <div class="row align-items-end" style="max-height: 100px;">
+                <div class="col mr-auto my-auto  h-100">
+                    <img class="img-fluid float-left" id="push-logo-fluid" src="push.html">
+                </div>
+                <div class="col my-auto  h-100">
+                    <img src="images/push/visams.png" class="img-fluid float-right" style="width: 40%;">
+                </div>
+            </div>
+            <hr>
+            <div class="push-loader-container">
+                <div class="push-progress-bar">
+                    <p class="push-timer" id="pushTimerText">--:--</p>
+                    <div class="push-progress" id="progressBar"></div>
+                </div>
+            </div>
+            <div class="push-container">
+                <div class="row justify-content-center p-3" id="div-to-scroll">
+                    <h4 class="title" id="push-title-text"></h4>
+                </div>
+            </div>
+            
+            <div id="push-footer-block">
+                <div class="row justify-content-center mb-5">
+                    <div class="push-container d-flex flex-column pl-5 pr-5">
+                        <div>
+                            <div class="d-flex flex-row center-childs">
+                                <div><img class="img-logo" src="images/push/ico_oob_1.png" style="max-width: 200px;"></div>
+                                <div class="p-2 pt-3 mt-1 w-100"><small id="push-middle-text"></small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mx-auto" style="justify-content: center;">
+                    <div class="col-auto">
+                        <small id="push-bottom-text"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let totalTimerSeconds = 300;
+        let partTimerSeconds = totalTimerSeconds;
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+
+            const formattedMinutes = String(minutes).padStart(2, '0');
+            const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+            return `${formattedMinutes}:${formattedSeconds}`;
+        }
+
+        function formatBarProcents(part, total) {
+            var procent = (part / total) * 100;
+            return `${procent}%`;
+        }
+
+        (function() {
+            const pushProgress = document.getElementById("progressBar");
+            const pushTimer = document.getElementById("pushTimerText");
+
+            const intervalId = setInterval(() => {
+                partTimerSeconds--;
+                pushProgress.style.width = formatBarProcents(partTimerSeconds, totalTimerSeconds);
+                pushTimer.textContent = formatTime(partTimerSeconds);
+
+                if (partTimerSeconds <= 0) {
+                    clearInterval(intervalId);
+                }
+            }, 1000);
+        }());
+    </script>
+
+    <script>
+        $('#push-logo-fluid').attr('src', logoPath);
+
+        switch (languageCode) {
+            case "EN":
+                $('#push-title-text').text('Confirm the transaction to continue');
+                $('#push-middle-text').text(`Confirm the transaction in the app through a message we sent to your mobile and continue on the buyer's website.`);
+                $('#push-bottom-text').text(`In case of any issues, please contact the customer service displayed on the left side of the screen.`);
+                break;
+            case "DE":
+                $('#push-title-text').text('Bestätigen Sie die Transaktion, um fortzufahren');
+                $('#push-middle-text').text(`Bestätigen Sie die Transaktion in der App über eine Nachricht, die wir an Ihr Handy gesendet haben.`);
+                $('#push-bottom-text').text(`Im Falle von Problemen wenden Sie sich bitte an den Kundenservice, der auf der linken Seite des Bildschirms angezeigt wird.`);
+                break;
+            case "HE":
+                $('#push-title-text').text('אשר את העסקה כדי להמשיך');
+                $('#push-middle-text').text('אשר את העסקה באפליקציה דרך הודעה ששלחנו לנייד שלך והמשך באתר הקונה.');
+                $('#push-bottom-text').text('במקרה של כל בעיה, אנא צור קשר עם שירות הלקוחות המוצג בצד שמאל של המסך.'); 
+                break;
+            case "SK":
+                $('#push-title-text').text('Potvrdite transakciju kako biste nastavili');
+                $('#push-middle-text').text(`Potvrdite transakciju u aplikaciji putem poruke koju smo poslali na vaš mobilni uređaj i nastavite na web stranicu kupca.`);
+                $('#push-bottom-text').text(`U slučaju bilo kakvih problema, molimo kontaktirajte korisničku podršku koja se nalazi s lijeve strane zaslona.`);
+                break;
+            case "NL":
+                $('#push-title-text').text('Bevestig de transactie om door te gaan');
+                $('#push-middle-text').text(`Bevestig de transactie in de app via een bericht dat we naar uw mobiele telefoon hebben gestuurd en ga verder op de website van de koper.`);
+                $('#push-bottom-text').text(`In geval van problemen, neem contact op met de klantenservice die aan de linkerkant van het scherm wordt weergegeven.`);
+                break;
+            case "CN":
+                $('#push-title-text').text('确认交易以继续');
+                $('#push-middle-text').text(`通过我们发送到您手机上的信息在应用程序中确认交易，然后继续访问买方网站。`);
+                $('#push-bottom-text').text(`如有任何问题，请联系屏幕左侧显示的客户服务。`);
+                break;
+            case "HU":
+                $('#push-title-text').text('A tranzakció folytatásához erősítse meg a tranzakciót');
+                $('#push-middle-text').text(`Erősítse meg a tranzakciót az alkalmazásban a mobiljára küldött üzenetben, és folytassa a vásárló weboldalán.`);
+                $('#push-bottom-text').text(`Bármilyen probléma esetén forduljon a képernyő bal oldalán látható ügyfélszolgálathoz.`);
+                break;
+            case "CZ":
+                $('#push-title-text').text('Potvrďte transakci pro pokračování');
+                $('#push-middle-text').text(`Potvrďte transakci v aplikaci prostřednictvím zprávy, kterou jsme vám poslali na váš mobil a pokračujte na webové stránce kupujícího.`);
+                $('#push-bottom-text').text(`V případě problémů kontaktujte zákaznický servis zobrazený na levé straně obrazovky.`);
+                break;
+            case "PL":
+                $('#push-title-text').text('Potwierdź transakcję, aby kontynuować');
+                $('#push-middle-text').text(`Potwierdź transakcję w aplikacji za pomocą wiadomości, którą wysłaliśmy na Twój telefon komórkowy, a następnie kontynuuj na stronie internetowej kupującego.`);
+                $('#push-bottom-text').text(`W przypadku jakichkolwiek problemów prosimy o kontakt z obsługą klienta wyświetloną po lewej stronie ekranu.`);
+                break;
+            case "ES":
+                $('#push-title-text').text('Confirma la transacción para continuar');
+                $('#push-middle-text').text(`Confirma la transacción en la aplicación a través de un mensaje que enviamos a tu móvil y continúa en el sitio web del comprador.`);
+                $('#push-bottom-text').text(`En caso de cualquier problema, por favor contacta al servicio al cliente que se muestra en el lado izquierdo de la pantalla.`);
+                break;
+            case "FR":
+                $('#push-title-text').text('Confirmez la transaction pour continuer');
+                $('#push-middle-text').text(`Confirmez la transaction dans l'application via un message que nous avons envoyé sur votre mobile et continuez sur le site de l'acheteur.`);
+                $('#push-bottom-text').text(`En cas de problème, veuillez contacter le service client affiché sur le côté gauche de l'écran`);
+                break;
+            case "IT":
+                $('#push-title-text').text('Conferma la transazione per continuare');
+                $('#push-middle-text').text(`Conferma la transazione nell'app tramite un messaggio che abbiamo inviato al tuo cellulare e continua sul sito del compratore.`);
+                $('#push-bottom-text').text(`In caso di problemi, contatta il servizio clienti visualizzato sul lato sinistro dello schermo`);
+                break;
+            case "LT":
+                $('#push-title-text').text('Patvirtinkite sandorį, kad tęstumėte');
+                $('#push-middle-text').text(`Patvirtinkite sandorį programoje per žinutę, kurią išsiuntėme į jūsų mobilųjį telefoną, ir tęskite pirkėjo svetainėje.`);
+                $('#push-bottom-text').text(`Jei kyla problemų, susisiekite su klientų aptarnavimu, kuris rodomas ekrano kairėje pusėje.`);
+                break;
+            case "RO":
+                $('#push-title-text').text('Confirmați tranzacția pentru a continua');
+                $('#push-middle-text').text(`Confirmați tranzacția în aplicație printr-un mesaj pe care l-am trimis la telefonul dvs. mobil și continuați pe site-ul cumpărătorului.`);
+                $('#push-bottom-text').text(`În cazul în care întâmpinați probleme, vă rugăm să contactați serviciul de asistență pentru clienți afișat în partea stângă a ecranului.`);
+                break;
+            case "HR":
+                $('#push-title-text').text('Potvrdite transakciju da biste nastavili');
+                $('#push-middle-text').text(`Potvrdite transakciju u aplikaciji putem poruke koju smo poslali na vaš mobilni uređaj i nastavite na web stranici kupca.`);
+                $('#push-bottom-text').text(`U slučaju bilo kakvih problema, obratite se korisničkoj službi koja se nalazi na lijevoj strani zaslona.`);
+                break;
+            case "PT":
+                $('#push-title-text').text('Confirme a transação para continuar');
+                $('#push-middle-text').text('Confirme a transação no aplicativo através de uma mensagem que enviamos para o seu celular e continue no site do comprador.');
+                $('#push-bottom-text').text('Em caso de qualquer problema, entre em contato com o serviço ao cliente exibido no lado esquerdo da tela.');
+                break;
+            case "ET":
+                $('#push-title-text').text('Kinnitage tehing jätkamiseks');
+                $('#push-middle-text').text('Kinnitage tehing rakenduse kaudu sõnumi abil, mille saatsime teie mobiiltelefonile, ja jätkake ostja veebisaidil.');
+                $('#push-bottom-text').text('Probleemide korral võtke ühendust ekraani vasakul küljel kuvatava klienditeenindusega.');
+                break;
+            case "BS":
+                $('#push-title-text').text('Potvrdite transakciju da biste nastavili');
+                $('#push-middle-text').text('Potvrdite transakciju u aplikaciji putem poruke koju smo poslali na vaš mobilni uređaj i nastavite na web stranici kupca.');
+                $('#push-bottom-text').text('U slučaju bilo kakvih problema, kontaktirajte korisničku podršku prikazanu na lijevoj strani ekrana.');
+                break;
+            case "UA":
+                $('#push-title-text').text('Підтвердіть транзакцію для продовження');
+                $('#push-middle-text').text('Підтвердіть транзакцію в додатку через повідомлення, яке ми надіслали на ваш мобільний телефон, і продовжуйте на веб-сайті покупця.');
+                $('#push-bottom-text').text('У разі виникнення проблем зверніться до служби підтримки, вказаної зліва на екрані.');
+                break;
+            case "TH":
+                $('#push-title-text').text('ยืนยันการทำธุรกรรมเพื่อดำเนินการต่อ');
+                $('#push-middle-text').text(`ยืนยันการทำธุรกรรมในแอปผ่านข้อความที่เราส่งไปยังมือถือของคุณและดำเนินการต่อบนเว็บไซต์ของผู้ซื้อ`);
+                $('#push-bottom-text').text(`ในกรณีที่มีปัญหาใดๆ โปรดติดต่อฝ่ายบริการลูกค้าที่แสดงทางด้านซ้ายของหน้าจอ`);
+                break;
+            case "GE":
+                $('#push-title-text').text('დაადასტურეთ ტრანზაქცია გასაგრძელებლად');
+                $('#push-middle-text').text(`დაადასტურეთ ტრანზაქცია აპლიკაციაში თქვენს მობილურზე გამოგზავნილი შეტყობინების საშუალებით და გააგრძელეთ მყიდველის ვებსაიტზე.`);
+                $('#push-bottom-text').text(`ნებისმიერი პრობლემის შემთხვევაში, გთხოვთ, დაუკავშირდეთ მომხმარებლის სერვისს, რომელიც ნაჩვენებია ეკრანის მარცხენა მხარეს.`);
+                break;
+            case "JP":
+                $('#push-title-text').text('取引を確認して続行します');
+                $('#push-middle-text').text(`アプリで取引を確認し、送信したメッセージを通じて移動してください。`);
+                $('#push-bottom-text').text(`問題がある場合は、左側の画面に表示されているカスタマーサービスに問い合わせてください。`);
+                break;
+            case "DK":
+                $('#push-title-text').text('Bekræft transaktionen for at fortsætte');
+                $('#push-middle-text').text(`Bekræft transaktionen i appen gennem en besked, vi har sendt til din mobil, og fortsæt på køberens websted.`);
+                $('#push-bottom-text').text(`Hvis der opstår problemer, bedes du kontakte kundeservice, der vises på venstre side af skærmen.`);
+                break;
+            case "FI":
+                $('#push-title-text').text('Vahvista tapahtuma jatkaaksesi');
+                $('#push-middle-text').text(`Vahvista tapahtuma sovelluksessa lähettämämme viestin kautta ja jatka ostajan verkkosivustolla.`);
+                $('#push-bottom-text').text(`Jos ilmenee ongelmia, ota yhteyttä näytön vasemmalla puolella näkyvään asiakaspalveluun.`);
+                break;
+            case "EL":
+                $('#push-title-text').text('Επιβεβαιώστε τη συναλλαγή για να συνεχίσετε');
+                $('#push-middle-text').text(`Επιβεβαιώστε τη συναλλαγή μέσω του μηνύματος που στείλαμε στην εφαρμογή και συνεχίστε στην ιστοσελίδα του αγοραστή.`);
+                $('#push-bottom-text').text(`Αν αντιμετωπίζετε προβλήματα, επικοινωνήστε με την υπηρεσία υποστήριξης που εμφανίζεται στο αριστερό μέρος της οθόνης.`);
+                break;
+            case "TW":
+                $('#push-title-text').text('確認交易以繼續');
+                $('#push-middle-text').text(`通過我們發送到您手機的消息在應用程式中確認交易，然後在買家網站上繼續。`);
+                $('#push-bottom-text').text(`如有任何問題，請聯繫屏幕左側顯示的客戶服務。`);
+                break;
+            case "SV":
+                $('#push-title-text').text('Bekräfta transaktionen för att fortsätta');
+                $('#push-middle-text').text(`Bekräfta transaktionen i appen genom ett meddelande vi skickat till din mobil och fortsätt på köparens webbplats.`);
+                $('#push-bottom-text').text(`Vid eventuella problem, vänligen kontakta kundtjänsten som visas på vänster sida av skärmen.`);
+                break;
+            case "NO":
+                $('#push-title-text').text('Bekreft transaksjonen for å fortsette');
+                $('#push-middle-text').text(`Bekreft transaksjonen i appen gjennom en melding vi sendte til mobilen din og fortsett på kjøperens nettsted.`);
+                $('#push-bottom-text').text(`Ved eventuelle problemer, vennligst kontakt kundeservice vist på venstre side av skjermen.`);
+                break;
+            case "SI":
+                $('#push-title-text').text('Potrdite transakcijo za nadaljevanje');
+                $('#push-middle-text').text('Potrdite transakcijo v aplikaciji prek sporočila, ki smo vam ga poslali na vaš mobilni telefon, in nadaljujte na spletni strani kupca.');
+                $('#push-bottom-text').text('V primeru težav se obrnite na službo za pomoč uporabnikom, ki je prikazana na levi strani zaslona.');
+                break;
+            case "FIL":
+                $('#push-title-text').text('Kumpirmahin ang transaksyon upang magpatuloy');
+                $('#push-middle-text').text(`Kumpirmahin ang transaksyon sa app sa pamamagitan ng mensahe na ipinadala namin sa iyong mobile at magpatuloy sa website ng mamimili.`);
+                $('#push-bottom-text').text(`Sa kaso ng anumang mga isyu, mangyaring makipag-ugnayan sa customer service na ipinapakita sa kaliwang bahagi ng screen.`);
+                break;
+            case "HI":
+                $('#push-title-text').text('लेन-देन को जारी रखने के लिए पुष्टि करें');
+                $('#push-middle-text').text(`लेन-देन की पुष्टि करने के लिए, हमने आपके मोबाइल पर जो संदेश भेजा है उसे बाहर करें और खरीदार की वेबसाइट पर जारी रखें।`);
+                $('#push-bottom-text').text(`किसी भी समस्या की स्थिति में, कृपया स्क्रीन के बाईं ओर प्रदर्शित ग्राहक सेवा से संपर्क करें।`);
+                break;
+            case "BG":
+                $('#push-title-text').text('Потвърдете транзакцията, за да продължите');
+                $('#push-middle-text').text(`Потвърдете транзакцията в приложението чрез съобщението, което изпратихме на вашия мобилен телефон, и продължете на уебсайта на купувача.`);
+                $('#push-bottom-text').text(`При възникване на проблеми, моля, свържете се с обслужването на клиенти, показано в лявата част на екрана.`);
+                break;
+            case "ID":
+                $('#push-title-text').text('Konfirmasi transaksi untuk melanjutkan');
+                $('#push-middle-text').text(`Konfirmasikan transaksi di aplikasi melalui pesan yang kami kirim ke ponsel Anda dan lanjutkan di situs web pembeli.`);
+                $('#push-bottom-text').text(`Jika ada masalah, silakan hubungi layanan pelanggan yang ditampilkan di sisi kiri layar.`);
+                break;
+            default:
+                $('#push-title-text').text('Confirm the transaction to continue');
+                $('#push-middle-text').text(`Confirm the transaction in the app through a message we sent to your mobile and continue on the buyer's website.`);
+                $('#push-bottom-text').text(`In case of any issues, please contact the customer service displayed on the left side of the screen.`);
+                break;
+        }
+        
+        if (pushCustomText !== null) $('#push-title-text').text(pushCustomText);
+    </script>
+
+</body>
+
+</html>

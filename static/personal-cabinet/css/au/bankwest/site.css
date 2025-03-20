@@ -1,0 +1,958 @@
+/* Default Site StyleSheet */
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
+}
+
+body {
+    font-family: "Bankwest-Roboto", "Open Sans", Arial, sans-serif;
+    color: #666666;
+    background: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.body-content {
+    max-width: 830px;
+}
+
+a {
+    color: #0063FF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0063FF;
+}
+
+a:focus {
+    color: #0063FF;
+    outline: 1px solid #1A2127;
+}
+
+a:visited {
+    color: #0063FF;
+}
+
+@media only screen and (min-width: 768px) {
+    .bw-logo {
+        margin-top: 20px;
+    }
+}
+
+.bw-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+hgroup {
+    text-align: center;
+    margin-top: 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-rendering: optimizeLegibility;
+    margin-top: 20px;
+}
+
+h1,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Bankwest-B2020-Bold', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    color: #282828;
+    line-height: 1.25;
+}
+
+h1.login-heading {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: "Bankwest-Roboto", "Open Sans Light", Arial, sans-serif;
+    font-size: 1.5em;
+    color: #282828;
+}
+
+h2.action-heading {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.sub-heading {
+    color: #282828;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.token-box {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.dropdown-item:active {
+    background: #ccc;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.consent-form {
+    padding: 0em 2em 2em 2em;
+}
+
+li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+li>a,
+li>a:visited {
+    color: #0063FF;
+    text-decoration: underline;
+}
+
+li>a:hover {
+    color: #0063FF;
+    text-decoration: none;
+}
+
+.welcome-page {
+    background: white;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.left-section {
+    flex-grow: 1;
+    flex: 50;
+    padding: 40px;
+    background: white;
+    position: relative;
+    border-radius: 24px 0px 0px 24px;
+}
+
+.table td {
+    padding: 0.4em;
+}
+
+#clientTable td .btn {
+    padding: 0.5em 0.35em 0.5em 0.35em;
+    width: 6em;
+}
+
+#clientTable .wrap-clientid {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#clientTable .wrap-clientname {
+    word-wrap: break-word;
+}
+
+@media only screen and (min-width: 768px) {
+    .right-section {
+        max-width: 50%;
+    }
+}
+
+.right-section {
+    flex-grow: 1;
+    background: #e3e3e3;
+    color: #282828;
+    padding: 1em 1em 2em 2em;
+    padding-top: 30px;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.dropdown-item {
+    text-decoration: none;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+fieldset {
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-group {
+        margin-bottom: 35px;
+    }
+}
+
+.footer-container {
+    margin: 1em;
+    font-size: .875em;
+}
+
+.footer-container p {
+    color: #282828;
+}
+
+.error-card {
+    padding: 8px 16px 1px;
+    background: #ffe9e1;
+    border-top: 3px solid #c73500;
+    color: #000;
+    margin-bottom: 38px;
+    margin-top: -32px;
+    list-style: none;
+}
+
+.error-card strong {
+    visibility: collapse;
+    display: none;
+}
+
+.error-card>.validation-summary-errors>ul {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.text-input {
+    border-radius: 0px !important;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #CCC;
+    font-size: 16px;
+    outline: none !important;
+    padding: 10px 10px 10px 5px;
+}
+
+.text-input:focus {
+    outline: none;
+    color: black;
+    border: none !important;
+    border-bottom: 2px solid #F26D21 !important;
+    box-shadow: 0px 2px 0px #F26D21;
+}
+
+.text-input[type="email"] {
+    padding-right: 72px;
+}
+
+/* Label */
+
+.animated-label {
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+/* active */
+
+input:focus~label,
+input.used~label,
+input[required]:valid~label {
+    top: -20px;
+    transform-origin: left;
+    transform: scale(.75);
+    left: -2px;
+    color: #e96211;
+}
+
+/*
+* Move the `<label>` out of way if the `<input>` is autofilled by webkit browsers
+* This is identical to the previous style however it must be separate because
+* `input:-webkit-autofill ~ label` breaks the style if used in the selector in IE
+*/
+
+input:-webkit-autofill~label {
+    top: -20px;
+    transform-origin: left;
+    transform: scale(.75);
+    left: -2px;
+    color: #e96211;
+}
+
+/* Underline */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #e96211;
+    transition: all 0.2s ease;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active */
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+/* Highlight */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active */
+
+input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* Animations */
+
+@keyframes inputHighlighter {
+    from {
+        background: #4a89dc;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/* Button */
+
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 32px;
+    border: solid 2px #282828;
+    border-radius: 24px;
+    background: #282828;
+    color: #ffffff;
+    font-family: "Bankwest-Roboto", "Open Sans", "Segoe UI", "-apple-system", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(40, 40, 40, 0.25);
+    box-shadow: 0 2px 10px 0 rgba(40, 40, 40, 0.25);
+    -webkit-transition: border 0.25s ease, -webkit-box-shadow 0.25s ease;
+    transition: border 0.25s ease, -webkit-box-shadow 0.25s ease;
+    transition: box-shadow 0.25s ease, border 0.25s ease;
+    transition: box-shadow 0.25s ease, border 0.25s ease, -webkit-box-shadow 0.25s ease;
+}
+
+.button::before {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    content: "";
+    opacity: 0;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    -webkit-transition: opacity 0.1s ease, -webkit-transform 0.25s ease;
+    transition: opacity 0.1s ease, -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease, opacity 0.1s ease;
+    transition: transform 0.25s ease, opacity 0.1s ease, -webkit-transform 0.25s ease;
+}
+
+.button:hover,
+.button:focus {
+    outline: none;
+    border-color: #3d3d3d;
+    background: #3d3d3d;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-box-shadow: 0 8px 10px 0 rgba(40, 40, 40, 0.25);
+    box-shadow: 0 8px 10px 0 rgba(40, 40, 40, 0.25);
+}
+
+.button:hover::before,
+.button:focus::before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-sizing: content-box;
+}
+
+.button:active {
+    border-color: #535353;
+    background: #535353;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button:active::before {
+    opacity: 0;
+}
+
+.button-orange {
+    background-color: #ff911e;
+    border-color: #db7000;
+    color: #282828;
+    border-width: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-orange::before {
+    border-color: #282828;
+}
+
+.button-orange:hover,
+.button-orange:focus {
+    background-color: #ff911e;
+    border-color: #db7000;
+    color: #282828;
+}
+
+.button-orange:active {
+    background-color: #ff911e;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #db7000;
+    color: #282828;
+}
+
+.button--secondary {
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary::before {
+    border-color: #282828;
+}
+
+.button--secondary-hover,
+.button--secondary:hover,
+.button--secondary:focus {
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary-hover::before {
+    opacity: 1;
+    border-color: #282828;
+}
+
+.button--secondary:active,
+.button--secondary-active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+}
+
+.button--secondary:disabled {
+    background-color: transparent;
+    border-color: #c2c2c2;
+    color: #c2c2c2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary-disabled {
+    background-color: transparent;
+    border-color: #c2c2c2;
+    color: #c2c2c2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary-dark {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.button--secondary-dark::before {
+    border-color: #ffffff;
+}
+
+.button--secondary-dark:hover,
+.button--secondary-dark:focus {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary-dark:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.button--secondary-dark:disabled {
+    background-color: transparent;
+    border-color: #535353;
+    color: #535353;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button--secondary-dark-disabled {
+    background-color: transparent;
+    border-color: #535353;
+    color: #535353;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button:disabled {
+    background-color: #d4d4d4;
+    color: #535353;
+    border-color: #d4d4d4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:focus,
+.button--disabled:active {
+    background-color: #d4d4d4;
+    color: #535353;
+    border-color: #d4d4d4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+@media (min-width: 48em) {
+    .button {
+        width: auto;
+        min-width: 8.75rem;
+    }
+}
+
+/* Button modifiers */
+
+.bankwest-button {
+    background: #e96211;
+    font-family: "Bankwest-Roboto", Arial, sans-serif;
+    color: #fff;
+    font-size: 19px;
+    height: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.bankwest-button:hover:enabled,
+.bankwest-button:focus {
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    background: #C9510C;
+}
+
+.bankwest-button:active {
+    background: #C9510C;
+    border-bottom: none;
+    border-top: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.bankwest-button>span {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.bankwest-button-grey {
+    background: #282828;
+    text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+}
+
+.bankwest-button-grey:hover:enabled {
+    background: #1f2830;
+}
+
+.button-form-group {
+    margin-bottom: 32px;
+}
+
+.text-button {
+    background-color: transparent;
+    border: none;
+    color: #0063FF;
+    cursor: pointer;
+    padding: 0 !important;
+    font-family: "Bankwest-Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.text-button:hover {
+    text-decoration: none;
+    color: #0063FF;
+}
+
+.text-button:focus {
+    outline: 1px solid #0063FF;
+    text-decoration: none;
+}
+
+.text-button:active {
+    color: #0063FF;
+    text-decoration: underline;
+}
+
+.text-button:disabled {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    color: #D4D4D4;
+    cursor: default;
+    padding: 0 !important;
+}
+
+.button-primary-charcoal-close {
+    background: transparent;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.button-primary-charcoal {
+    width: 239px;
+}
+
+.button-secondary-white {
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 239px;
+    color: #282828;
+}
+
+.button-secondary-white::before {
+    border-color: #282828;
+}
+
+.button-secondary-white:focus,
+.button-secondary-white:hover {
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.button-secondary-white:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: #282828;
+    color: #282828;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: .825em;
+    letter-spacing: .4px;
+}
+
+footer a {
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 80px;
+    transition: all .2s ease;
+}
+
+footer img:hover {
+    opacity: .83;
+}
+
+footer img:focus,
+footer a:focus {
+    outline: none;
+}
+
+.consent-app-header {
+    padding-left: 1em;
+}
+
+.consent-panel {
+    border-radius: 0px;
+    margin-top: 1em;
+}
+
+.domain-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background: darkblue;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.security-alert-icon {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+/* Change Autocomplete styles in Chrome*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    transition: background-color 5000000s ease-in-out 0s;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #F26D21;
+    animation: spinner .6s linear infinite;
+}
+
+.spinner.password-spinner:before {
+    left: unset;
+    right: 4px;
+    top: 22px;
+    height: 20px;
+    width: 20px;
+}
+
+.spinner.logout-spinner {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Password reset process */
+
+.password-hints {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.password-hints li {
+    margin-bottom: 0px;
+}
+
+.text-input.weak-password {
+    border-bottom: 2px solid #C73500 !important;
+    box-shadow: 0px 2px 0px #C73500;
+}
+
+.text-input.strong-password {
+    border-bottom: 2px solid #00A68A !important;
+    box-shadow: 0px 2px 0px #00A68A;
+}
+
+.g-recaptcha {
+    margin-bottom: 32px;
+}
+
+.only-section {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px !important;
+}
+
+.logo-banner {
+    display: block;
+    text-align: left;
+    background: #1A2127;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media screen and (min-width: 767px) {
+    .logo-banner {
+        display: block;
+        text-align: left;
+        background: #1A2127;
+        color: #FFFFFF;
+        font-size: 14px;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 10%;
+    }
+    .only-section {
+        padding: 40px;
+        background: white;
+        position: relative;
+        border-radius: 24px 24px 24px 24px;
+    }
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+}
+
+.info-icon {
+    height: 46px;
+    width: 46px;
+    padding: 1px 2px;
+}
+
+.alert-icon {
+    height: 46px;
+    width: 46px;
+    padding: 1px 2px;
+}
+
+.copyright-bankwest {
+    min-height: 28px;
+    max-width: 589px;
+    color: #282828;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.form-text-error {
+    height: 14px;
+    width: 224px;
+    color: #C73500;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+@media screen and (max-width: 766px) {
+    .bw-logo {
+        height: 32px;
+        width: auto;
+    }
+    .alert-icon {
+        height: 32px;
+        width: 32px;
+    }
+    .copyright-bankwest {
+        min-height: 28px;
+        max-height: 56px;
+        min-width: 246px;
+        max-width: 589px;
+    }
+    .logo-banner {
+        padding-left: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,1185 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+:focus {
+    outline: none;
+    outline-offset: -1px;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-display: swap;
+    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__510298c5f4.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__3432cf9630.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__a96ee8d059.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-display: swap;
+    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__70693e2ed8.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__2122afa574.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__e76d313ec2.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-display: swap;
+    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__aac7e61091.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__269a1d4c12.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__4190d9d59c.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body,
+a {
+    color: rgb(43, 43, 43);
+}
+
+.emotion-1t07wd2 {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(226, 230, 233);
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1t07wd2 {
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+}
+
+.emotion-zdemr5 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    height: 7.8rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.emotion-b9m2ia {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    height: 7.8rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-b9m2ia {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.emotion-1snq5dx {
+    display: block;
+    width: 160px;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1snq5dx {
+        width: 184px;
+    }
+}
+
+.emotion-1sguxb6 {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1sguxb6 {
+        display: block;
+    }
+}
+
+.emotion-1s4jhf8 {
+    color: rgb(222, 49, 59);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+}
+
+.emotion-1s4jhf8:hover {
+    color: rgb(135, 14, 64);
+}
+
+.emotion-1s4jhf8:hover {
+    text-decoration: none;
+}
+
+.emotion-1r1ya35 {
+    color: rgb(222, 49, 59);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+}
+
+.emotion-1r1ya35:hover {
+    color: rgb(135, 14, 64);
+}
+
+.emotion-1r1ya35:hover {
+    text-decoration: none;
+}
+
+.emotion-1eipz85 {
+    -webkit-box-align: center;
+    align-items: center;
+    border-left: 1px solid rgb(226, 230, 233);
+    display: flex;
+    flex-direction: column;
+    padding: 0.525rem 0px 0.525rem 1.6rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1eipz85 {
+        display: none;
+    }
+}
+
+.emotion-cxv3aj {
+    -webkit-box-align: center;
+    align-items: center;
+    border-left: 1px solid rgb(226, 230, 233);
+    display: flex;
+    flex-direction: column;
+    padding: 0.525rem 0px 0.525rem 1.6rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-cxv3aj {
+        display: none;
+    }
+}
+
+.emotion-1g0vxgi {
+    margin-top: 0.75rem;
+}
+
+.emotion-7hjycl {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    min-height: calc(-32rem + 100vh);
+    overflow: hidden;
+    position: relative;
+}
+
+@media (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .emotion-7hjycl::after {
+        content: "";
+        display: block;
+        font-size: 0px;
+        min-height: inherit;
+    }
+}
+
+.emotion-12xmn99 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1 1 0%;
+    min-height: 100%;
+    min-width: 0px;
+}
+
+.emotion-1yvav1 {
+    font-size: 1.4rem;
+    max-width: 55rem;
+    min-height: 41rem;
+    padding-top: 5rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1yvav1 {
+        min-height: 29rem;
+    }
+}
+
+.emotion-l2vpz2 {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    padding: 5rem 1.6rem 2.5rem;
+    font-size: 1.4rem;
+    max-width: 55rem;
+    min-height: 41rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-l2vpz2 {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-l2vpz2 {
+        min-height: 29rem;
+    }
+}
+
+.emotion-1m86chp {
+    margin-bottom: 4.6rem;
+}
+
+.emotion-15sjkg6 {
+    color: rgb(51, 0, 25);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 4.6rem;
+}
+
+.emotion-1t1ugnu {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-pwijm6 {
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.emotion-1sv2hpi {
+    flex: 1 0 auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.emotion-doz4u4 {
+    cursor: none;
+    left: 2rem;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.emotion-1x48oym {
+    color: currentcolor;
+    display: block;
+    height: 22px;
+    width: 22px;
+}
+
+.emotion-zjveko {
+    appearance: none;
+    color: rgb(43, 43, 43);
+    font-size: 1.6rem;
+    height: 6.4rem;
+    line-height: 1.25;
+    min-width: 20rem;
+    width: 100%;
+    background: rgb(243, 244, 245);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+    outline: none;
+    padding: 2.2rem 5.6rem;
+    transition: background 0.1s ease-in-out, border-color;
+}
+
+.emotion-13l80fd {
+    cursor: pointer;
+    pointer-events: auto;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: rgb(88, 0, 58);
+}
+
+.emotion-1x48oym circle,
+.emotion-1x48oym ellipse,
+.emotion-1x48oym path,
+.emotion-1x48oym polygon,
+.emotion-1x48oym rect {
+    fill: currentcolor;
+}
+
+.emotion-1ad3kh2 {
+    appearance: none;
+    background: rgb(243, 244, 245);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: rgb(43, 43, 43);
+    font-size: 1.6rem;
+    height: 6.4rem;
+    line-height: 1.25;
+    min-width: 20rem;
+    outline: none;
+    padding: 2.2rem 2.2rem 2.2rem 5.6rem;
+    transition: background 0.1s ease-in-out, border-color;
+    width: 100%;
+}
+
+.emotion-1ad3kh2:focus {
+    background: rgb(255, 255, 255);
+    border-color: rgb(88, 0, 58);
+}
+
+.emotion-1ad3kh2::placeholder {
+    color: rgba(50, 61, 66, 0.7);
+}
+
+.emotion-1ad3kh2::placeholder {
+    color: rgba(50, 61, 66, 0.7);
+}
+
+.emotion-1ad3kh2::placeholder {
+    color: rgba(50, 61, 66, 0.7);
+}
+
+.emotion-1ad3kh2::placeholder {
+    color: rgba(50, 61, 66, 0.7);
+}
+
+.emotion-6s27ux {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.emotion-1mune9 {
+    order: 1;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+.emotion-166laxw {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 2.4rem;
+    outline: none;
+}
+
+.emotion-10bwrdt {
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.emotion-m1sohh {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 1rem;
+}
+
+.emotion-rbbndr {
+    color: currentcolor;
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+.emotion-rbbndr circle,
+.emotion-rbbndr ellipse,
+.emotion-rbbndr path,
+.emotion-rbbndr polygon,
+.emotion-rbbndr rect {
+    fill: currentcolor;
+}
+
+.emotion-8o70gl {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-8o70gl {
+        width: 13rem;
+        margin-left: 1.6rem;
+    }
+}
+
+.emotion-567lek {
+    appearance: none;
+    background: rgb(88, 0, 58);
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 6.4rem;
+    line-height: 1.25;
+    outline: none;
+    padding: 2.2rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out, color;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.emotion-567lek:disabled {
+    background: rgb(244, 233, 241);
+    color: rgba(43, 43, 43, 0.4);
+    cursor: not-allowed;
+}
+
+.emotion-567lek:not(:disabled):hover {
+    background: rgb(135, 14, 64);
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-567lek {
+        width: 13rem;
+        margin-left: 1.6rem;
+    }
+}
+
+.emotion-l4wpyd {
+    appearance: none;
+    background: rgb(88, 0, 58);
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 6.4rem;
+    line-height: 1.25;
+    outline: none;
+    padding: 2.2rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out, color;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.emotion-l4wpyd:disabled {
+    background: rgb(244, 233, 241);
+    color: rgba(43, 43, 43, 0.4);
+    cursor: not-allowed;
+}
+
+.emotion-l4wpyd:not(:disabled):hover {
+    background: rgb(135, 14, 64);
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-l4wpyd {
+        width: 13rem;
+        margin-left: 1.6rem;
+    }
+}
+
+.emotion-1f4e0jx {
+    margin-bottom: 2rem;
+    order: 2;
+}
+
+.emotion-1t7aa6p {
+    color: rgb(50, 61, 66);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    margin-bottom: 2rem;
+    order: 2;
+}
+
+.emotion-1t7aa6p:hover {
+    text-decoration: none;
+}
+
+.emotion-1swnapa {
+    color: rgb(50, 61, 66);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    margin-bottom: 2rem;
+    order: 2;
+}
+
+.emotion-1swnapa:hover {
+    text-decoration: none;
+}
+
+.emotion-puazpt {
+    background: rgb(243, 244, 245);
+    padding-bottom: 2rem;
+}
+
+.emotion-17l0fl8 {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-17l0fl8 {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-tilroi {
+        align-items: flex-end;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.emotion-6rsdkr {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-6rsdkr {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-6rsdkr {
+        align-items: flex-end;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.emotion-14svsl4 {
+    line-height: 1;
+    margin: 4.8rem 0px 1.6rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-14svsl4 {
+        margin: 0px;
+    }
+}
+
+.emotion-1j1y50w {
+    color: rgb(51, 0, 25);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 4.8rem 0px 1.6rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1j1y50w {
+        margin: 0px;
+    }
+}
+
+.emotion-1298ts1 {
+    color: rgb(135, 14, 64);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.emotion-gdiuo0 {
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    color: rgb(135, 14, 64);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.emotion-gdiuo0:hover {
+    color: rgb(135, 14, 64);
+}
+
+.emotion-gdiuo0:hover {
+    text-decoration: none;
+}
+
+.emotion-xvzkhk {
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    color: rgb(135, 14, 64);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.emotion-xvzkhk:hover {
+    color: rgb(135, 14, 64);
+}
+
+.emotion-xvzkhk:hover {
+    text-decoration: none;
+}
+
+.emotion-d3v9zr {
+    overflow: hidden;
+}
+
+.emotion-1649opf {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1649opf {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.emotion-mny53j {
+    display: flex;
+    flex-flow: wrap;
+    margin: -1.5rem;
+}
+
+.emotion-za8u8e {
+    border: 1px solid;
+    color: rgb(135, 14, 64);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 2.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out, border-color, box-shadow;
+    white-space: nowrap;
+    width: calc(100% - 3rem);
+}
+
+.emotion-za8u8e:hover {
+    background: rgb(255, 255, 255);
+    border-color: rgb(226, 230, 233);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 1rem -0.25rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-za8u8e {
+        width: calc(50% - 3rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .emotion-za8u8e {
+        flex: 1 1 0%;
+        width: auto;
+    }
+}
+
+.emotion-86phza {
+    border: 1px solid;
+    color: rgb(135, 14, 64);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 2.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.1s ease-in-out, border-color, box-shadow;
+    white-space: nowrap;
+    width: calc(100% - 3rem);
+}
+
+.emotion-86phza:hover {
+    background: rgb(255, 255, 255);
+    border-color: rgb(226, 230, 233);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 1rem -0.25rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-86phza {
+        width: calc(50% - 3rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .emotion-86phza {
+        flex: 1 1 0%;
+        width: auto;
+    }
+}
+
+.emotion-1azakc {
+    text-align: center;
+}
+
+.emotion-1no47dq {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1no47dq {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.emotion-100xrp4 {
+    margin-right: 0.4rem;
+}
+
+.emotion-pd4c92 {
+    margin-right: 0.4rem;
+}
+
+.emotion-1g9ngsb {
+    border-top: 1px solid rgb(226, 230, 233);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.emotion-1qu5vmc {
+    flex: 1 1 0%;
+    margin: 0px auto;
+    max-width: 125rem;
+    padding: 2.5rem 1.6rem;
+    border-top: 1px solid rgb(226, 230, 233);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1qu5vmc {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.emotion-1j66vkv {
+    padding: 2rem 0px;
+}
+
+.emotion-j5gwh1 {
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-j5gwh1 {
+        flex-direction: row-reverse;
+        height: 44rem;
+    }
+}
+
+.emotion-13m2zxx {
+    background-image: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/bendigobank/marketing-banner.jpg");
+    background-position: 100% center;
+    background-size: cover;
+    flex: 1 1 0%;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-13m2zxx {
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+    }
+}
+
+.emotion-js0ajb {
+    background: linear-gradient(105deg, rgb(88, 0, 58) 20%, rgb(222, 49, 59) 80%);
+    display: flex;
+    flex: 1 1 0%;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-js0ajb {
+        -webkit-box-flex: 2;
+        flex-grow: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .emotion-js0ajb {
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+    }
+}
+
+.emotion-qq3bdl {
+    display: none;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-qq3bdl {
+        display: initial;
+    }
+}
+
+.emotion-1mz0bas {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-1mz0bas {
+        top: 50%;
+    }
+}
+
+.emotion-lwlfve {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-lwlfve {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .emotion-lwlfve {
+        width: 50%;
+    }
+}
+
+.emotion-1fd8i2b {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.emotion-1fde0v8 {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.emotion-ukycvp {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    color: rgb(222, 49, 59);
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out, color;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-ukycvp {
+        width: fit-content;
+    }
+}
+
+.emotion-ukycvp:hover {
+    background-color: rgb(241, 91, 91);
+    color: rgb(255, 255, 255);
+}
+
+.emotion-1lni9t5 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    color: rgb(222, 49, 59);
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out, color;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-1lni9t5 {
+        width: fit-content;
+    }
+}
+
+.emotion-1lni9t5:hover {
+    background-color: rgb(241, 91, 91);
+    color: rgb(255, 255, 255);
+}
+
+.emotion-6jx3pb {
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 5px 30px);
+    font-size: 1.6rem;
+    line-height: 1.625;
+    margin-top: -8rem;
+    padding: 2.4rem;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-6jx3pb {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 3.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .emotion-6jx3pb {
+        padding: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-1oxdmfh {
+        padding-right: 2.4rem;
+    }
+}
+
+.emotion-1updu7q {
+    color: rgb(222, 49, 59);
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+
+.emotion-wimlac {
+    display: block;
+    padding: 1.25rem 0px;
+}
+
+@media screen and (min-width: 640px) {
+    .emotion-wimlac {
+        display: initial;
+        padding: 0px;
+    }
+}
+
+.emotion-1bmnxg7 {
+    white-space: nowrap;
+}
+
+.emotion-i4lmbz {
+    color: rgb(135, 14, 64);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    white-space: nowrap;
+}
+
+.emotion-i4lmbz:hover {
+    color: rgb(88, 0, 58);
+}
+
+.emotion-i4lmbz:hover {
+    text-decoration: none;
+}
+
+.emotion-1mm28rj {
+    color: rgb(135, 14, 64);
+    outline: none;
+    text-decoration: underline;
+    transition: color 0.1s ease-in-out;
+    white-space: nowrap;
+}
+
+.emotion-1mm28rj:hover {
+    color: rgb(88, 0, 58);
+}
+
+.emotion-1mm28rj:hover {
+    text-decoration: none;
+}
