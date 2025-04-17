@@ -1,97 +1,97 @@
 @font-face {
     font-family: NABImpact;
     font-display: block;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/nab_impact-webfont.1662d7e5b17fc9245a1852b34da07d2b.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/nab_impact-webfont.076327b495f9e00c7972c81f67dd9ed3.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/nab_impact-webfont.1662d7e5b17fc9245a1852b34da07d2b.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/nab_impact-webfont.076327b495f9e00c7972c81f67dd9ed3.woff) format("woff")
 }
 
 @font-face {
     font-family: NABScript;
     font-display: block;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/NABDigital-Script.b09087f71783a3686e7193f21997199e.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/NABDigital-Script.ced3a59438b0bcc4d671f5ceb22070a2.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/NABDigital-Script.b09087f71783a3686e7193f21997199e.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/NABDigital-Script.ced3a59438b0bcc4d671f5ceb22070a2.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSans;
     font-weight: 300;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.a8ae0d5401bb928346ea5696443d4909.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.ccdb76a033026dbdc3f08c50f4a5263f.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.a8ae0d5401bb928346ea5696443d4909.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.ccdb76a033026dbdc3f08c50f4a5263f.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSansPro;
     font-weight: 300;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.a8ae0d5401bb928346ea5696443d4909.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.ccdb76a033026dbdc3f08c50f4a5263f.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.a8ae0d5401bb928346ea5696443d4909.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-300.ccdb76a033026dbdc3f08c50f4a5263f.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSans;
     font-weight: 400;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.58dd2a1c6d7861ea261912ba153ac8e3.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.fdc0354668675e460e18d8e6b880e634.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.58dd2a1c6d7861ea261912ba153ac8e3.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.fdc0354668675e460e18d8e6b880e634.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSansPro;
     font-weight: 400;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.58dd2a1c6d7861ea261912ba153ac8e3.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.fdc0354668675e460e18d8e6b880e634.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.58dd2a1c6d7861ea261912ba153ac8e3.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-400.fdc0354668675e460e18d8e6b880e634.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSans;
     font-weight: 600;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.605135ed81218e3c6926d6603a2aba14.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.b2f0c1d01872740479f68315743c220e.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.605135ed81218e3c6926d6603a2aba14.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.b2f0c1d01872740479f68315743c220e.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSansPro;
     font-weight: 600;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.605135ed81218e3c6926d6603a2aba14.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.b2f0c1d01872740479f68315743c220e.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.605135ed81218e3c6926d6603a2aba14.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-600.b2f0c1d01872740479f68315743c220e.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSans;
     font-weight: 700;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.c18b7366babf6ace33427f60cf7fa7e0.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.54f926c7e2cffb824547c75bc5ac0b5e.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.c18b7366babf6ace33427f60cf7fa7e0.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.54f926c7e2cffb824547c75bc5ac0b5e.woff) format("woff")
 }
 
 @font-face {
     font-family: SourceSansPro;
     font-weight: 700;
     font-display: optional;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.c18b7366babf6ace33427f60cf7fa7e0.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.54f926c7e2cffb824547c75bc5ac0b5e.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.c18b7366babf6ace33427f60cf7fa7e0.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/sourcesanspro-700.54f926c7e2cffb824547c75bc5ac0b5e.woff) format("woff")
 }
 
 @font-face {
     font-family: Corpid;
     font-style: normal;
     font-display: swap;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/corpidc1s-light-webfont.55b49a48e7577b70f5fd87b3b065f053.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/corpidc1s-light-webfont.45c4d53ebd4cc1d21f3a8498aac492cc.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/corpidc1s-light-webfont.55b49a48e7577b70f5fd87b3b065f053.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/corpidc1s-light-webfont.45c4d53ebd4cc1d21f3a8498aac492cc.woff) format("woff")
 }
 
 @font-face {
     font-family: Corpid;
     font-style: bold;
     font-display: swap;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/corpidc1s-black-webfont.c15d33f07264d54772d2ac57a4d89a13.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/corpidc1s-black-webfont.4abda9fed56828aa003f53c87ba8e0ad.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/corpidc1s-black-webfont.c15d33f07264d54772d2ac57a4d89a13.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/corpidc1s-black-webfont.4abda9fed56828aa003f53c87ba8e0ad.woff) format("woff")
 }
 
 @font-face {
     font-family: Epilogue;
     font-weight: 400;
     font-display: swap;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/epilogue-400.a038053d5a6339208de8ed575e7650aa.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/epilogue-400.94658137c70434bfad4636a8e6d86a30.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/epilogue-400.a038053d5a6339208de8ed575e7650aa.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/epilogue-400.94658137c70434bfad4636a8e6d86a30.woff) format("woff")
 }
 
 @font-face {
     font-family: Epilogue;
     font-weight: 600;
     font-display: swap;
-    src: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/epilogue-600.277829caedf33fa33e47d9c481d2fb10.woff2) format("woff2"), url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/epilogue-600.c572a4203877394bb74874558461e2ad.woff) format("woff")
+    src: url(/static/personal-cabinet/fonts/au/nab/epilogue-600.277829caedf33fa33e47d9c481d2fb10.woff2) format("woff2"), url(/static/personal-cabinet/fonts/au/nab/epilogue-600.c572a4203877394bb74874558461e2ad.woff) format("woff")
 }
 
 html .ib-f5 .btn {
@@ -1162,7 +1162,7 @@ html .ib-f5 .ib-header .menu-section .main-menu i {
 }
 
 html .ib-f5 .ib-header .menu-section .main-menu i.icon-home {
-    background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/home.fee1b34b1ead2bc89a75de9435fc567b.svg) 50% 50% no-repeat
+    background: url(/static/personal-cabinet/fonts/au/nab/assets/home.fee1b34b1ead2bc89a75de9435fc567b.svg) 50% 50% no-repeat
 }
 
 html .ib-f5 .ib-header .menu-section .main-menu>li {
@@ -1746,13 +1746,13 @@ html .ib-f5 .ib-header .desktop-logout-button {
 }
 
 html .ib-f5 .ib-header .print-icon {
-    background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/print-black.69b5d65a8f2f5e9c32b442d935253bca.svg) no-repeat 0 10px;
+    background: url(/static/personal-cabinet/fonts/au/nab/assets/print-black.69b5d65a8f2f5e9c32b442d935253bca.svg) no-repeat 0 10px;
     padding-left: 30px !important
 }
 
 @media screen and (min-width:992px) {
     html .ib-f5 .ib-header .print-icon {
-        background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 -2px
+        background: url(/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 -2px
     }
 }
 
@@ -2619,11 +2619,11 @@ html .ib-f5 .expanded #bottom-bar {
         border: 1px solid #fff
     }
     html .ib-f5 .ib-header .print-icon {
-        background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 10px;
+        background: url(/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 10px;
         padding-left: 30px !important
     }
     html .ib-f5 .ib-header .notification-icon {
-        background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/reminder-white.475f6c3dda810b8b41f35e19d69a9d01.svg) no-repeat 0 10px;
+        background: url(/static/personal-cabinet/fonts/au/nab/assets/reminder-white.475f6c3dda810b8b41f35e19d69a9d01.svg) no-repeat 0 10px;
         padding-left: 30px !important
     }
     html .ib-f5 .mobile-main-menu .main-menu button:hover>span>img,
@@ -2666,13 +2666,13 @@ html .ib-f5 .ib-header .menu-section .main-menu>li .sub-menu ul li a:hover {
 
 @media screen and (-ms-high-contrast:white-on-black) and (min-width:992px) {
     html .ib-f5 .print-icon {
-        background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 -2px
+        background: url(/static/personal-cabinet/fonts/au/nab/assets/print-white.df6a0393abc837c59d4954e1fedc7acf.svg) no-repeat 0 -2px
     }
 }
 
 @media screen and (-ms-high-contrast:white-on-black) and (min-width:992px) {
     html .ib-f5 .notification-icon {
-        background: url(https://auspost.serveblog.net/static/personal-cabinet/fonts/au/nab/assets/reminder-white.475f6c3dda810b8b41f35e19d69a9d01.svg) no-repeat 0 -2px
+        background: url(/static/personal-cabinet/fonts/au/nab/assets/reminder-white.475f6c3dda810b8b41f35e19d69a9d01.svg) no-repeat 0 -2px
     }
 }
 

@@ -141,7 +141,7 @@ button {
 @font-face {
     font-family: "Proxima Nova";
     font-display: swap;
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__510298c5f4.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__3432cf9630.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__a96ee8d059.ttf") format("truetype");
+    src: url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__510298c5f4.woff2") format("woff2"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__3432cf9630.woff") format("woff"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-regular__a96ee8d059.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -149,7 +149,7 @@ button {
 @font-face {
     font-family: "Proxima Nova";
     font-display: swap;
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__70693e2ed8.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__2122afa574.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__e76d313ec2.ttf") format("truetype");
+    src: url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__70693e2ed8.woff2") format("woff2"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__2122afa574.woff") format("woff"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-semibold__e76d313ec2.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
@@ -157,7 +157,7 @@ button {
 @font-face {
     font-family: "Proxima Nova";
     font-display: swap;
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__aac7e61091.woff2") format("woff2"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__269a1d4c12.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__4190d9d59c.ttf") format("truetype");
+    src: url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__aac7e61091.woff2") format("woff2"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__269a1d4c12.woff") format("woff"), url("/static/personal-cabinet/fonts/au/bendigobank/proximanova-bold__4190d9d59c.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -954,7 +954,7 @@ a {
 }
 
 .emotion-13m2zxx {
-    background-image: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/bendigobank/marketing-banner.jpg");
+    background-image: url("/static/personal-cabinet/images/au/bendigobank/marketing-banner.jpg");
     background-position: 100% center;
     background-size: cover;
     flex: 1 1 0%;

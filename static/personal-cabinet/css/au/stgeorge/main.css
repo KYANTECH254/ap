@@ -623,8 +623,8 @@ th {
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.eot');
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.woff') format('woff'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.ttf') format('truetype'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.eot');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.woff') format('woff'), url('/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.ttf') format('truetype'), url('/static/personal-cabinet/fonts/au/stgeorge/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 .glyphicon {
@@ -6805,16 +6805,16 @@ div[page][partial]:after {
 
 @font-face {
     font-family: 'Dragon Bold';
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.eot');
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.woff') format('woff'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.ttf') format('truetype'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.svg#dragon_boldbold') format('svg');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.eot');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.woff') format('woff'), url('/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.ttf') format('truetype'), url('/static/personal-cabinet/fonts/au/stgeorge/dragonbold-bold-webfont.svg#dragon_boldbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: westpac-icons;
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.eot?-ko57xe');
-    src: url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.svg?-ko57xe#westpac-icons') format('svg'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.eot?#iefix-ko57xe') format('embedded-opentype'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.woff?-ko57xe') format('woff'), url('https://auspost.serveblog.net/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.ttf?-ko57xe') format('truetype');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.eot?-ko57xe');
+    src: url('/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.svg?-ko57xe#westpac-icons') format('svg'), url('/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.eot?#iefix-ko57xe') format('embedded-opentype'), url('/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.woff?-ko57xe') format('woff'), url('/static/personal-cabinet/fonts/au/stgeorge/westpac-icons.ttf?-ko57xe') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -13274,7 +13274,7 @@ input[type="checkbox"]:focus {
 }
 
 .fractel {
-    background-image: url('https://auspost.serveblog.net/static/personal-cabinet/images/au/stgeorge/SGB_background-xs.svg');
+    background-image: url('/static/personal-cabinet/images/au/stgeorge/SGB_background-xs.svg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 100% auto;
@@ -13282,7 +13282,7 @@ input[type="checkbox"]:focus {
 
 @media (min-width: 500px) {
     .fractel {
-        background-image: url('https://auspost.serveblog.net/static/personal-cabinet/images/au/stgeorge/SGB_background-sm.svg');
+        background-image: url('/static/personal-cabinet/images/au/stgeorge/SGB_background-sm.svg');
         background-size: 100% auto;
         background-position: left bottom;
     }
@@ -13290,7 +13290,7 @@ input[type="checkbox"]:focus {
 
 @media (min-width: 992px) {
     .fractel {
-        background-image: url('https://auspost.serveblog.net/static/personal-cabinet/images/au/stgeorge/SGB_background-md.svg');
+        background-image: url('/static/personal-cabinet/images/au/stgeorge/SGB_background-md.svg');
         background-size: 100% auto;
         background-position: left bottom;
     }

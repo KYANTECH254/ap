@@ -773,7 +773,7 @@ video {
 }
 
 .bg-firmBg {
-    background-image: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/macquarie/bg.png");
+    background-image: url("/static/personal-cabinet/images/au/macquarie/bg.png");
 }
 
 .bg-cover {

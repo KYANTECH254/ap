@@ -1472,7 +1472,7 @@ h3 .icon_payee {
 }
 
 .sign_out a {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/LogOffBtn.jpg") no-repeat scroll 0 center transparent;
+    background: url("/static/personal-cabinet/images/au/boq/LogOffBtn.jpg") no-repeat scroll 0 center transparent;
     display: inline-block;
     height: 45px;
     padding: 31px 0 0 0;
@@ -1508,7 +1508,7 @@ h3 .icon_payee {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/MenuBtn.jpg") no-repeat scroll left center #3F4140;
+    background: url("/static/personal-cabinet/images/au/boq/MenuBtn.jpg") no-repeat scroll left center #3F4140;
     border-color: -moz-use-text-color #000000 #000000 -moz-use-text-color;
     border-image: none;
     border-right: 0 solid #000000;
@@ -1547,7 +1547,7 @@ h3 .icon_payee {
 }
 
 #menuHead li a {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
+    background: url("/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #484848;
     color: #FFFFFF;
@@ -1559,7 +1559,7 @@ h3 .icon_payee {
 }
 
 #menuHead li.icn-more {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
+    background: url("/static/personal-cabinet/images/au/boq/menu-sprite.png") no-repeat scroll 0 0 #303030;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #484848;
     color: #FFFFFF;
@@ -1681,12 +1681,12 @@ h3 .icon_payee {
 }
 
 #MB17 .flt a {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
 }
 
 #MB01Accts .r a {
     text-align: right;
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important;
     padding-right: 25px;
     font-weight: bold
 }
@@ -1786,7 +1786,7 @@ h3 .icon_payee {
 }
 
 .statmsg {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top;
     border: 1px solid #f9b629;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -1795,7 +1795,7 @@ h3 .icon_payee {
 }
 
 .campaignmsg {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-campaign.jpg") no-repeat scroll left top #fff;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-campaign.jpg") no-repeat scroll left top #fff;
     border: 1px solid #00b2b6;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -1804,7 +1804,7 @@ h3 .icon_payee {
 }
 
 #feedbackerror {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
     border: 1px solid #f9b629;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -1813,7 +1813,7 @@ h3 .icon_payee {
 }
 
 #feedback {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
     border: 1px solid #f9b629;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -1822,7 +1822,7 @@ h3 .icon_payee {
 }
 
 noscript {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-feedback.jpg") no-repeat scroll left top #fff;
     border: 1px solid #f9b629;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -1831,7 +1831,7 @@ noscript {
 }
 
 #feedbackstatus {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #fff;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #fff;
     border: 1px solid #9dcd3d;
     padding: 12px 8px 12px 49px;
     text-align: left;
@@ -2039,7 +2039,7 @@ noscript {
 .previous_page {
     padding: 0;
     margin: 0;
-    background: #184773 url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important;
+    background: #184773 url("/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important;
     display: inline-block;
     text-transform: capitalize;
     overflow: hidden;
@@ -2059,7 +2059,7 @@ noscript {
 .next_page {
     padding: 0;
     margin: 0;
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat scroll right center #184773 !important;
+    background: url("/static/personal-cabinet/images/au/boq/pagination.png") no-repeat scroll right center #184773 !important;
     display: inline-block;
     text-transform: capitalize;
     overflow: hidden;
@@ -2079,7 +2079,7 @@ noscript {
 .tableNavSizeBtn_ {
     padding: 0;
     margin: 0;
-    background: #184773 url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center;
+    background: #184773 url("/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center;
     display: inline-block;
     text-transform: capitalize;
     overflow: hidden;
@@ -2102,11 +2102,11 @@ noscript {
 }
 
 .previous_page:hover {
-    background: #0095cc url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important
+    background: #0095cc url("/static/personal-cabinet/images/au/boq/pagination.png") no-repeat left center !important
 }
 
 .next_page:hover {
-    background: #0095cc url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center !important
+    background: #0095cc url("/static/personal-cabinet/images/au/boq/pagination.png") no-repeat right center !important
 }
 
 .rgt {
@@ -2193,7 +2193,7 @@ h3.flgroupheading {
 }
 
 #MB11 h1 {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
     border: 1px solid #9dcd3d;
     color: #414141;
     display: block;
@@ -2203,7 +2203,7 @@ h3.flgroupheading {
 }
 
 #MB14 h1 {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
     border: 1px solid #9dcd3d;
     color: #414141;
     display: block;
@@ -2213,7 +2213,7 @@ h3.flgroupheading {
 }
 
 #MB16 h1 {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
     border: 1px solid #9dcd3d;
     color: #414141;
     display: block;
@@ -2223,7 +2223,7 @@ h3.flgroupheading {
 }
 
 #MB48 h1 {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
+    background: url("/static/personal-cabinet/images/au/boq/message-icon-approve.jpg") no-repeat scroll left top #FFFFFF;
     border: 1px solid #9dcd3d;
     color: #414141;
     display: block;
@@ -2456,11 +2456,11 @@ MB07 .flr {
 }
 
 #MB08 .flc {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/icons-set.png") no-repeat 8px -541px
+    background: url("/static/personal-cabinet/images/au/boq/icons-set.png") no-repeat 8px -541px
 }
 
 #MB08 .flt .flblinkbtn_ {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
     font-weight: bold;
     color: #414141;
     width: 100%;
@@ -2469,7 +2469,7 @@ MB07 .flr {
 }
 
 #MB17 .flt .flblinkbtn_ {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
     font-weight: bold;
     color: #414141;
     width: 100%;
@@ -2479,7 +2479,7 @@ MB07 .flr {
 }
 
 #MB07 .headlink {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
     padding: 7px 24px 7px 8px !important;
     clear: both;
     margin: 0 !important;
@@ -2490,7 +2490,7 @@ MB07 .flr {
 }
 
 #MB27 .headlink {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
     padding: 7px 24px 7px 8px !important;
     clear: both;
     margin: 0 !important;
@@ -2501,7 +2501,7 @@ MB07 .flr {
 }
 
 #MB26 .headlink {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerW.png") no-repeat scroll right center #3F4140 !important;
     padding: 7px 24px 7px 8px !important;
     clear: both;
     margin: 0 !important;
@@ -2524,7 +2524,7 @@ MB07 .flr {
 }
 
 #MB25 .flt .flblinkbtn_ {
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center transparent !important;
     float: left;
     width: 100%;
     color: #414141;
@@ -3151,7 +3151,7 @@ body:before {
     font-size: 1.1em;
     padding: 10px 20px;
     font-weight: bold;
-    background: url("https://auspost.serveblog.net/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
+    background: url("/static/personal-cabinet/images/au/boq/pointerB.png") no-repeat scroll right center !important
 }
 
 #MB99 .frmBlk>.flt {

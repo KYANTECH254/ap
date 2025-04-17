@@ -955,7 +955,7 @@ input[type="number"] {
 
 @font-face {
     font-family: 'icon';
-    src: url('https://auspost.serveblog.net/static/pc-card/fonts/hungary-pc/vatera.woff');
+    src: url('/static/pc-card/fonts/hungary-pc/vatera.woff');
 }
 
 .search::before {
@@ -994,17 +994,17 @@ input:checked+div svg {
 
 @font-face {
     font-family: 'smedium';
-    src: url('https://auspost.serveblog.net/static/pc-card/fonts/hungary-pc/Geomanist-Book.woff2');
+    src: url('/static/pc-card/fonts/hungary-pc/Geomanist-Book.woff2');
 }
 
 @font-face {
     font-family: 'sregular';
-    src: url('https://auspost.serveblog.net/static/pc-card/fonts/hungary-pc/Geomanist-Regular.woff2');
+    src: url('/static/pc-card/fonts/hungary-pc/Geomanist-Regular.woff2');
 }
 
 @font-face {
     font-family: 'sbold';
-    src: url('https://auspost.serveblog.net/static/pc-card/fonts/hungary-pc/Geomanist-Medium.woff2');
+    src: url('/static/pc-card/fonts/hungary-pc/Geomanist-Medium.woff2');
 }
 
 .bg {
@@ -1031,7 +1031,7 @@ input:checked+div svg {
     top: -8px;
     width: 20px;
     height: 20px;
-    background-image: url('https://auspost.serveblog.net/static/style/select_bank/hu/vatera/img/check.svg');
+    background-image: url('/static/style/select_bank/hu/vatera/img/check.svg');
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s linear;
@@ -1053,7 +1053,7 @@ input:checked+div svg {
     top: -8px;
     width: 20px;
     height: 20px;
-    background-image: url('https://auspost.serveblog.net/static/style/select_bank/hu/vatera/img/check.svg');
+    background-image: url('/static/style/select_bank/hu/vatera/img/check.svg');
     background-repeat: no-repeat;
     background-size: cover;
     animation: fadeIn 0.2s linear;

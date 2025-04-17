@@ -937,22 +937,22 @@ video {
 
 @font-face {
     font-family: 'al';
-    src: url('https://auspost.serveblog.net/static/delivery/fonts/auspost/APTypeProText-Light.woff2');
+    src: url('/static/delivery/fonts/auspost/APTypeProText-Light.woff2');
 }
 
 @font-face {
     font-family: 'ar';
-    src: url('https://auspost.serveblog.net/static/delivery/fonts/auspost/APTypeProText-Regular.woff2');
+    src: url('/static/delivery/fonts/auspost/APTypeProText-Regular.woff2');
 }
 
 @font-face {
     font-family: 'am';
-    src: url('https://auspost.serveblog.net/static/delivery/fonts/auspost/APTypeProText-Medium.woff2');
+    src: url('/static/delivery/fonts/auspost/APTypeProText-Medium.woff2');
 }
 
 @font-face {
     font-family: 'ab';
-    src: url('https://auspost.serveblog.net/static/delivery/fonts/auspost/APTypeProText-Bold.woff2');
+    src: url('/static/delivery/fonts/auspost/APTypeProText-Bold.woff2');
 }
 
 input[type="number"]::-webkit-inner-spin-button,

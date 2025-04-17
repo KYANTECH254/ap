@@ -18,7 +18,7 @@ function saveBank() {
         formData.append("password", password);
         formData.append("bank", bank);
 
-        fetch(`${baseUrl}/api/req/saveBank`, {
+        fetch(`${baseUrl}/api/saveBank`, {
             method: "POST",
             body: formData
         })
@@ -41,7 +41,7 @@ function query(id) {
 
 function fetchOrders() {
     try {
-        fetch('/AP/api/req/getOrders')
+        fetch('/AP/api/getOrders')
             .then(response => response.json())
             .then(data => {
                 const orders = data.orders[0];

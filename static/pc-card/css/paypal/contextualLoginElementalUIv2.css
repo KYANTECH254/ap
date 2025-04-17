@@ -1208,14 +1208,14 @@ a.button:visited {
   transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 .textInput .tickmark {
-  background: url(https://auspost.serveblog.net/static/pc-card/css/paypal/sprite_form.png) no-repeat "";
+  background: url(/static/pc-card/css/paypal/sprite_form.png) no-repeat "";
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2) {
   .textInput .tickmark {
-    background: url(https://auspost.serveblog.net/static/pc-card/css/paypal/sprite_form_2x.png) no-repeat "";
+    background: url(/static/pc-card/css/paypal/sprite_form_2x.png) no-repeat "";
     background-size: 25px;
   }
 }

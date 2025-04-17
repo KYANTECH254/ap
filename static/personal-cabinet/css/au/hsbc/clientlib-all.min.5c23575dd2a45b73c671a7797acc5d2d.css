@@ -1,7 +1,7 @@
 @font-face {
     font-family: "HSBCIcon-Font";
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.eot");
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.eot?#iefix") format("embedded-opentype"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.woff") format("woff"), url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.ttf") format("truetype");
+    src: url("/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.eot");
+    src: url("/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.eot?#iefix") format("embedded-opentype"), url("/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.woff") format("woff"), url("/static/personal-cabinet/fonts/au/hsbc/HSBCIcon-Font.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }

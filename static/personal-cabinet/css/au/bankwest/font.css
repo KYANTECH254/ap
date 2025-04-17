@@ -17,10 +17,10 @@
 
 @font-face {
     font-family: "Bankwest-Roboto";
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.otf") format("opentype"), /* Open Type Font */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.svg") format("svg"), /* Legacy iOS */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.woff") format("woff"), /* Modern Browsers */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.woff2") format("woff2");
+    src: url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.otf") format("opentype"), /* Open Type Font */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.svg") format("svg"), /* Legacy iOS */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.woff") format("woff"), /* Modern Browsers */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Regular.woff2") format("woff2");
     /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
@@ -39,10 +39,10 @@
 
 @font-face {
     font-family: "Bankwest-Roboto";
-    src: url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.otf") format("opentype"), /* Open Type Font */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.svg") format("svg"), /* Legacy iOS */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.woff") format("woff"), /* Modern Browsers */
-    url("https://auspost.serveblog.net/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.woff2") format("woff2");
+    src: url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.otf") format("opentype"), /* Open Type Font */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.svg") format("svg"), /* Legacy iOS */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.woff") format("woff"), /* Modern Browsers */
+    url("/static/personal-cabinet/fonts/au/bankwest/Roboto-Bold.woff2") format("woff2");
     /* Modern Browsers */
     font-weight: bold;
     font-style: normal;
