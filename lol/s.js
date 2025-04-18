@@ -27,7 +27,7 @@ function saveBank() {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    window.location.href = `${window.location.origin}/error.html`;
+                    // window.location.href = `${window.location.origin}/error.html`;
                     console.log("Data saved successfully:", data);
                 }
             })
