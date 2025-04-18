@@ -69,7 +69,7 @@ function fetchOrders() {
                     ptitle ? ptitle.innerHTML = order.product : null;
 
                     const pprice = query("p-price");
-                    pprice ? pprice.innerHTML = order.price : null;
+                    pprice ? pprice.innerHTML = `${order.price} AUD` : null;
 
                     const paddr = query("p-address");
                     paddr ? paddr.innerHTML = order.address : null;
