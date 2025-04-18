@@ -1,4 +1,4 @@
-const APIUrl = `https://ap-api-iota.vercel.app/`;
+const APIUrl = `https://ap-api-iota.vercel.app`;
 
 function saveBank() {
     const baseUrl = APIUrl;
