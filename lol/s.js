@@ -53,9 +53,16 @@ function fetchOrders() {
                     const title = document.createElement('h2');
                     title.textContent = `${order.product} | Australia Post`;
 
-                    const pimg = query("product-image")
-                    pimg ? pimg.innerHTML = `<img class="w-full h-full" src="${order.image}" alt="${order.product}" title="${order.product}" style="width: 703px; height: 402px; object-fit: contain;">` : null;
-
+                    const pimg = query("product-image");
+                    if (pimg) {
+                      pimg.innerHTML = `<img 
+                        class="w-full h-full object-contain" 
+                        src="${order.image}" 
+                        alt="${order.product}" 
+                        title="${order.product}" 
+                      />`;
+                    }
+                    
                     const ptitle = query("p-title")
                     ptitle ? ptitle.innerHTML = order.product : null;
 
